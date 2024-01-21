@@ -1,0 +1,171 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+```{r import and name}
+getwd()
+eps <- read.csv('./SGStats/eps.csv')
+queens <- read.csv('./SGStats/queens.csv')
+names(queens) <- queens[1,]
+queens <- queens[-1,]
+colnames(queens)[2] <- 'queen'
+chars <- read.csv('./SGStats/chars.csv')
+names(chars) <- chars[1,]
+chars <- chars[-1,]
+```
+
+```{r look at eps}
+sapply(eps, class)
+eps$airdate <- as.Date(eps$airdate)
+eps$regas <- as.factor(eps$regas)
+eps$internat <- as.factor(eps$internat)
+eps$specialformat <- as.factor(eps$specialformat)
+summary(eps)
+```
+```{r look at queens}
+sapply(queens, class)
+queens$character2[queens$character2 == "N/A"] <- NA
+queens$uniqueid <- as.numeric(queens$uniqueid)
+```
+
+```{r look at chars}
+sapply(chars, class)
+chars <- chars[-6]
+chars$alive <- as.factor(chars$alive)
+chars$genre <- as.factor(chars$genre)
+chars$genre2 <- as.factor(chars$genre2)
+chars$genre3 <- as.factor(chars$genre3)
+```
+```{r eppivot}
+library(tidyverse)
+#eps[10:31]
+epspivot <- pivot_longer(eps, cols = 10:31, names_to = 'plcmnt', values_to = 'queen', values_drop_na = T) %>% filter(queen != 'N/A')
+epspivot$queen <- replace(epspivot$queen, epspivot$queen == "Trinity The Tuck", "Trinity the Tuck")
+```
+
+```{r}
+queens
+```
+
+```{r queenpivot}
+queenspivot <- pivot_longer(queens, cols = 3:4, values_to = 'character') %>% drop_na(character) %>% select(c(1, 2, 4))
+queenspivot$queen[queenspivot$queen == "Trinity The Tuck"] <- "Trinity the Tuck"
+```
+
+```{r charpivot}
+chars[4:5][chars[4:5] == "N/A"] <- NA
+charpivot <- pivot_longer(chars, cols = 3:5, values_to = 'genres') %>% drop_na(genres)
+charpivot <- charpivot[-3]
+```
+
+
+```{r epqueen Join}
+epqueenjoin <- inner_join(epspivot, queenspivot, by = c('uniqueid', 'queen'), multiple = 'all')
+myby <- join_by(character == char)
+bigjoin <- inner_join(epqueenjoin, charpivot, myby)
+summary(bigjoin)
+```
+```{r summarize placements}
+bigjoin <- bigjoin %>%
+  mutate(tsb = case_when(startsWith(tolower(plcmnt), 'safe') ~ 'SAFE',
+                         startsWith(tolower(plcmnt), 'win') ~ 'WIN',
+                         startsWith(tolower(plcmnt), 'high') ~ 'HIGH',
+                         startsWith(tolower(plcmnt), 'bottom') ~ 'BOTTOM',
+                          startsWith(tolower(plcmnt), 'elim') ~ 'ELIM'))
+```
+
+```{r make and order factors}
+bigjoin$tsb <- factor(bigjoin$tsb, levels = c('ELIM', 'BOTTOM', 'SAFE', 'HIGH', 'WIN'))
+summary(bigjoin)
+```
+```{r PLOT}
+summary(bigjoin$tsb) #439 results approx normally distributed- separate entry for each genre that each character is in, multi-hyphenates are NOT random (athlete pornstar is much rarer than actor-comedian or actor-model)
+
+#one entry for each genre within a character
+bigjoin %>% group_by(tsb) %>% summarise(bb = n()) %>% ggplot(., aes(x = tsb, y = bb)) + geom_col()
+
+#what about how all the QUEENS overall have done, disregarding characters? (BthDQ has one win)
+bigjoin %>% distinct(uniqueid, queen, tsb) %>% group_by(queen) %>% ggplot(aes(x = tsb)) + geom_bar()
+bigjoin %>% distinct(uniqueid, queen, tsb) %>% group_by(queen)
+
+#what about how distinct CHARACTERS do? (entry for each character in every episode)
+bigjoin %>% distinct(uniqueid, character, tsb) %>% ggplot(aes(x = tsb)) + geom_bar()
+bigjoin %>% distinct(uniqueid, character, tsb)
+```
+```{r}
+#Multi-hyphenates counted multiple times, how do different genres do?
+fullfacet <- bigjoin %>% group_by(tsb) %>% ggplot(aes(tsb)) + geom_bar() + facet_wrap(~genres)
+#, scales = 'free_y')
+fullfacet
+#subsets
+fullfacet %+% dplyr::filter(bigjoin, genres %in% c('Actor', 'GG'))
+#examine genres
+bigjoin %>% filter(genres == 'Athlete')
+```
+
+Next steps: Density plots, assign a point value for each placement and then do some anova- do certain groups do better or worse than the baseline? GAUGE PLOT?
+```{r pt values}
+bigjoin <- bigjoin %>%
+  mutate(score = case_when(tsb == 'WIN' ~ 1,
+                         tsb == 'HIGH' ~ .5,
+                         tsb == 'SAFE' ~ 0,
+                         tsb == 'BOTTOM' ~ -.5,
+                         tsb == 'ELIM' ~ -1))
+bigjoin %>% group_by(genres) %>% summarise(avgscore = mean(score)) %>% arrange(desc(avgscore))
+```
+```{r DEAD VS ALIVE- plots and t-testing}
+#Dead Characters vs Alive Characters (at first appearance)
+bigjoin %>% distinct(uniqueid, character, tsb, alive) %>% ggplot(aes(x = tsb)) + geom_bar() + facet_wrap(~alive)
+
+
+deadalivecheck <- bigjoin %>% distinct(uniqueid, character, score, alive)
+doa <- ggplot(data = deadalivecheck, aes(x=score, group=alive, fill = alive)) + geom_density(adjust = .3, alpha = .4)
+doa
+
+#T-TESTING
+deadalivecheck
+deadalivecheck %>% group_by(alive) %>% summarise(mean(score))
+deadalivecheck %>% summarise(mean(score))
+?t.test
+allalive <- deadalivecheck %>% filter(alive == 1)
+allalive
+alldead <- deadalivecheck %>% filter(alive == 0)
+alldead
+t.test(alldead$score, allalive$score) #pval is .02- dead character avg is significantly different from alive character avg
+t.test(allalive$score, deadalivecheck$score) #pval is .3822, alive characters don't differ significantly from the whole group
+t.test(alldead$score, deadalivecheck$score) #pval is .09151, dead characters don't differ significantly from whole group
+```
+```{r genres, t-testing}
+bigjoin %>% group_by(genres) %>% summarise(avgscore = mean(score)) %>% arrange(desc(avgscore))
+genregroup <- bigjoin %>% group_by(genres)
+genregroup
+genregroup %>% summarise(mean(score))
+genregroup$score
+
+genregroup %>%filter (genres == 'Musician') %>% pull(score)
+athletes <- genregroup %>% filter(genres == 'Writer') %>% pull(score)
+athletes
+t.test(athletes, genregroup$score)
+```
+
+```{r}
+#sure you can just have everyone who won but really what you want is people who have done well over multiple SG's
+this <- bigjoin %>% group_by(uniqueid, queen) %>% summarise()  #distinct(uniqueid, queen)
+this2 <- bigjoin%>% group_by(uniqueid)
+
+#This is just the queens who have done more than one (join on this and get some more interesting stats)
+twotimers <- queens %>% filter(duplicated(queen, fromLast = T) | duplicated(queen, fromLast = F))
+twotimers <- twotimers[-4]
+```
+
+```{r}
+#hmm this is cool and really close but the mutliple characters are going to throw off the avg
+bigjoin %>% filter(queen %in% twotimers$dq) %>% distinct(uniqueid, queen, score) %>% group_by(queen) %>% summarise(avgscore = mean(score)) %>% arrange(desc(avgscore))
+
+bigjoin %>% filter(queen == 'Gia Gunn')
+```
+```{r}
+T-TESTING AND DENSITY PLOTS
+```
+
+
