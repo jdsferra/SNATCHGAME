@@ -1,33 +1,27 @@
-#
-# This is the user-interface definition of a Shiny web application. You can
-# run the application by clicking 'Run App' above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    https://shiny.posit.co/
-#
-
-library(shiny)
-
-# Define UI for application that draws a histogram
-fluidPage(
-
-    # Application title
-    titlePanel("Old Faithful Geyser Data"),
-
-    # Sidebar with a slider input for number of bins
-    sidebarLayout(
-        sidebarPanel(
-            sliderInput("bins",
-                        "Number of bins:",
-                        min = 1,
-                        max = 50,
-                        value = 30)
-        ),
-
-        # Show a plot of the generated distribution
-        mainPanel(
-            plotOutput("distPlot")
-        )
-    )
+library(shinydashboard)
+dashboardPage(skin = 'purple',
+  dashboardHeader(title='Who Should I Play on the Snatch Game?', titleWidth = 380),
+  
+  dashboardSidebar( sidebarUserPanel("Joe Sferra: NYCDSA",
+                                     image = './NYCDSA.png' ),
+                    sidebarMenu(
+                      menuItem("Plots", tabName = "plots", icon = icon("truck-monster")),
+                      menuItem("Data", tabName = "data", icon = icon("database"))
+                    ),
+                    
+                    selectizeInput(inputId='origin',label='Departure Airport',
+                                   choices=unique(flights$origin),
+                                   selected=unique(flights$origin)[1]),
+                    selectizeInput("dest", "Arrival Airport",
+                                   choices=unique(flights$dest))
+  ),
+  
+  dashboardBody(
+    tabItems(
+      tabItem(tabName = 'plots', fluidRow(
+        column(5, plotOutput("count")),
+        column(7, plotOutput("delay")) )),
+      
+      tabItem(tabName = 'data', tableOutput("table")) )
+  )
 )

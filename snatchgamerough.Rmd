@@ -78,32 +78,6 @@ bigjoin <- bigjoin %>%
 bigjoin$tsb <- factor(bigjoin$tsb, levels = c('ELIM', 'BOTTOM', 'SAFE', 'HIGH', 'WIN'))
 summary(bigjoin)
 ```
-```{r PLOT}
-summary(bigjoin$tsb) #439 results approx normally distributed- separate entry for each genre that each character is in, multi-hyphenates are NOT random (athlete pornstar is much rarer than actor-comedian or actor-model)
-
-#one entry for each genre within a character
-bigjoin %>% group_by(tsb) %>% summarise(bb = n()) %>% ggplot(., aes(x = tsb, y = bb)) + geom_col()
-
-#what about how all the QUEENS overall have done, disregarding characters? (BthDQ has one win)
-bigjoin %>% distinct(uniqueid, queen, tsb) %>% group_by(queen) %>% ggplot(aes(x = tsb)) + geom_bar()
-bigjoin %>% distinct(uniqueid, queen, tsb) %>% group_by(queen)
-
-#what about how distinct CHARACTERS do? (entry for each character in every episode)
-bigjoin %>% distinct(uniqueid, character, tsb) %>% ggplot(aes(x = tsb)) + geom_bar()
-bigjoin %>% distinct(uniqueid, character, tsb)
-```
-```{r}
-#Multi-hyphenates counted multiple times, how do different genres do?
-fullfacet <- bigjoin %>% group_by(tsb) %>% ggplot(aes(tsb)) + geom_bar() + facet_wrap(~genres)
-#, scales = 'free_y')
-fullfacet
-#subsets
-fullfacet %+% dplyr::filter(bigjoin, genres %in% c('Actor', 'GG'))
-#examine genres
-bigjoin %>% filter(genres == 'Athlete')
-```
-
-Next steps: Density plots, assign a point value for each placement and then do some anova- do certain groups do better or worse than the baseline? GAUGE PLOT?
 ```{r pt values}
 bigjoin <- bigjoin %>%
   mutate(score = case_when(tsb == 'WIN' ~ 1,
@@ -113,13 +87,96 @@ bigjoin <- bigjoin %>%
                          tsb == 'ELIM' ~ -1))
 bigjoin %>% group_by(genres) %>% summarise(avgscore = mean(score)) %>% arrange(desc(avgscore))
 ```
+
+```{r PLOT}
+ #439 results approx normally distributed- separate entry for each genre that each character is in, 
+summary(bigjoin$tsb)
+plot(bigjoin$tsb)
+
+#option to disregard All Stars or regular (bigjoin %>% filter(regas == 'reg') %>% group_by(tsb))
+#one entry for each genre within a character
+bigjoin %>% group_by(tsb) %>% ggplot(., aes(x = tsb)) + geom_bar()
+
+#Score instead of placement (same)
+bigjoin %>% group_by(score) %>% ggplot(., aes(x = score)) + geom_bar()
+
+#what about how all the QUEENS overall have done, disregarding characters? (BthDQ has one win)
+bigjoin %>% distinct(uniqueid, queen, tsb) %>% group_by(queen) %>% ggplot(aes(x = tsb)) + geom_bar()
+bigjoin %>% distinct(uniqueid, queen, tsb) %>% group_by(queen)
+
+#what about how distinct CHARACTERS do? (entry for each character in every episode)
+bigjoin %>% distinct(uniqueid, character, tsb) %>% ggplot(aes(x = tsb)) + geom_bar()
+bigjoin %>% distinct(uniqueid, character, tsb)
+```
+```{r, PHASE OUT- scared to delete, eval = FALSE}
+#Multi-hyphenates counted multiple times, how do different genres do?
+fullfacet <- bigjoin %>% group_by(tsb) %>% ggplot(aes(tsb)) + geom_bar() + facet_wrap(~genres)
+#, scales = 'free_y')
+fullfacet
+#subsets
+fullfacet %+% dplyr::filter(bigjoin, genres %in% c('Actor', 'GG'))
+#^this is good, but you have to go through the fullfacet, takes a longer time
+
+#close, totals all of them (phase this out)
+addcounts <- genrecheck %>% ggplot(aes(x=tsb), fill = genres, group = genres) + geom_bar() + labs(caption = paste("Total =", nrow(genrecheck))) + facet_wrap(~genres)
+addcounts
+
+genrebar <- genrecheck %>% ggplot(aes(x=tsb), fill = genres, group = genres) + geom_bar() + facet_wrap(~genres)
+genrebar
+```
+
+```{r CRUX}
+#examine genres- double check
+#bigjoin %>% filter(genres == 'Actor')
+#--------------------------------------------------------------
+genrecheck <- bigjoin %>% distinct(uniqueid, character, tsb, score, genres)
+genrecheck <- genrecheck %>% filter(genres %in% c('Reality', 'RH'))
+genrecheck
+genredens <- genrecheck %>% ggplot(., aes(x=tsb, group=genres, fill = genres)) + geom_density(adjust = .5, alpha = .5)
+genredens
+#--------------------------------------------------------------
+genrebar <- genrecheck %>% group_by(genres) %>% mutate(genre_count = n()) %>%
+  ungroup() %>%
+  mutate(genre_update = paste0(genres, "; n=", genre_count)) %>%
+  ggplot(aes(x = tsb)) + geom_bar()+ facet_wrap(~genre_update)
+genrebar
+```
+
+```{r T-TESTING}
+
+### I am suspicious of trying to do t-testing on this, because 
+#install.packages('rstatix')
+library(rstatix)
+genrecheck
+?t_test
+genrecheck$score
+genrecheck%>% group_by(genres) %>% get_summary_stats(score, type = "mean_sd")
+genreanova <- genrecheck %>% anova_test(score ~ genres)
+genreanova #p-value here is less than .05, there are statistically-significant differences between the groups (.031)
+
+genreanova2 <- trimmedgc %>% anova_test(score ~ genres)
+genreanova2 (.021)
+```
+
+
+```{r T-TESTING, Pairwise}
+#pairwise comparisons OK I am struggling here. Can't get much out of these pairwise comparisons, which I guess is ok? but the anova says there's a statistically-significant difference among the groups.
+trimmedgc <- genrecheck %>% group_by(genres) %>% filter(n() >= 2) %>% ungroup()
+trimmedgc
+trimmedgc$score <- as.numeric(trimmedgc$score)
+?pairwise.t.test
+pwc <- pairwise.t.test(trimmedgc$score, trimmedgc$genres, p.adj= 'bonferroni')
+class(trimmedgc$score)
+wilcox.test(trimmedgc$score,trimmedgc$genres, p.adj= 'bonferroni')
+```
+
 ```{r DEAD VS ALIVE- plots and t-testing}
 #Dead Characters vs Alive Characters (at first appearance)
 bigjoin %>% distinct(uniqueid, character, tsb, alive) %>% ggplot(aes(x = tsb)) + geom_bar() + facet_wrap(~alive)
 
 
 deadalivecheck <- bigjoin %>% distinct(uniqueid, character, score, alive)
-doa <- ggplot(data = deadalivecheck, aes(x=score, group=alive, fill = alive)) + geom_density(adjust = .3, alpha = .4)
+doa <- ggplot(data = deadalivecheck, aes(x=score, group=alive, fill = alive)) + geom_density(adjust = .5, alpha = .5)
 doa
 
 #T-TESTING
@@ -163,9 +220,6 @@ twotimers <- twotimers[-4]
 bigjoin %>% filter(queen %in% twotimers$dq) %>% distinct(uniqueid, queen, score) %>% group_by(queen) %>% summarise(avgscore = mean(score)) %>% arrange(desc(avgscore))
 
 bigjoin %>% filter(queen == 'Gia Gunn')
-```
-```{r}
-T-TESTING AND DENSITY PLOTS
 ```
 
 
