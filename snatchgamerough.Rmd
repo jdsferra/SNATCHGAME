@@ -4,15 +4,15 @@ output: html_notebook
 ---
 ```{r import and name}
 getwd()
+library(tidyverse)
 eps <- read.csv('./SGStats/eps.csv')
 queens <- read.csv('./SGStats/queens.csv')
 names(queens) <- queens[1,]
 queens <- queens[-1,]
 colnames(queens)[2] <- 'queen'
 chars <- read.csv('./SGStats/chars.csv')
-names(chars) <- chars[1,]
-chars <- chars[-1,]
 ```
+
 
 ```{r look at eps}
 sapply(eps, class)
@@ -30,21 +30,20 @@ queens$uniqueid <- as.numeric(queens$uniqueid)
 
 ```{r look at chars}
 sapply(chars, class)
-chars <- chars[-6]
 chars$alive <- as.factor(chars$alive)
 chars$genre <- as.factor(chars$genre)
 chars$genre2 <- as.factor(chars$genre2)
 chars$genre3 <- as.factor(chars$genre3)
+chars1 <- chars[1:5]
+chars2 <- chars[, -c(3:5)]
+chars1
+chars2
 ```
+
 ```{r eppivot}
-library(tidyverse)
 #eps[10:31]
 epspivot <- pivot_longer(eps, cols = 10:31, names_to = 'plcmnt', values_to = 'queen', values_drop_na = T) %>% filter(queen != 'N/A')
 epspivot$queen <- replace(epspivot$queen, epspivot$queen == "Trinity The Tuck", "Trinity the Tuck")
-```
-
-```{r}
-queens
 ```
 
 ```{r queenpivot}
@@ -52,21 +51,35 @@ queenspivot <- pivot_longer(queens, cols = 3:4, values_to = 'character') %>% dro
 queenspivot$queen[queenspivot$queen == "Trinity The Tuck"] <- "Trinity the Tuck"
 ```
 
-```{r charpivot}
-chars[4:5][chars[4:5] == "N/A"] <- NA
-charpivot <- pivot_longer(chars, cols = 3:5, values_to = 'genres') %>% drop_na(genres)
-charpivot <- charpivot[-3]
+```{r char1pivot}
+chars1[4:5][chars1[4:5] == "N/A"] <- NA
+char1pivot <- pivot_longer(chars1, cols = 3:5, values_to = 'genres') %>% drop_na(genres)
+char1pivot <- char1pivot[-3]
+```
+```{r char2pivot}
+char2pivot <- pivot_longer(chars2, cols = 3:12, values_to = 'genres') %>% drop_na(genres)
+char2pivot = char2pivot[-4]
+char2pivot <- char2pivot %>% rename('genres' = 'name')
 ```
 
 
 ```{r epqueen Join}
 epqueenjoin <- inner_join(epspivot, queenspivot, by = c('uniqueid', 'queen'), multiple = 'all')
 myby <- join_by(character == char)
-bigjoin <- inner_join(epqueenjoin, charpivot, myby)
-summary(bigjoin)
+bigjoin1 <- inner_join(epqueenjoin, char1pivot, myby)
+bigjoin2 <- inner_join(epqueenjoin, char2pivot, myby)
+bigjoin2$genres <- as.factor(bigjoin2$genres)
+summary(bigjoin2)
 ```
 ```{r summarize placements}
-bigjoin <- bigjoin %>%
+bigjoin1 <- bigjoin1 %>%
+  mutate(tsb = case_when(startsWith(tolower(plcmnt), 'safe') ~ 'SAFE',
+                         startsWith(tolower(plcmnt), 'win') ~ 'WIN',
+                         startsWith(tolower(plcmnt), 'high') ~ 'HIGH',
+                         startsWith(tolower(plcmnt), 'bottom') ~ 'BOTTOM',
+                          startsWith(tolower(plcmnt), 'elim') ~ 'ELIM'))
+
+bigjoin2 <- bigjoin2 %>%
   mutate(tsb = case_when(startsWith(tolower(plcmnt), 'safe') ~ 'SAFE',
                          startsWith(tolower(plcmnt), 'win') ~ 'WIN',
                          startsWith(tolower(plcmnt), 'high') ~ 'HIGH',
@@ -75,39 +88,80 @@ bigjoin <- bigjoin %>%
 ```
 
 ```{r make and order factors}
-bigjoin$tsb <- factor(bigjoin$tsb, levels = c('ELIM', 'BOTTOM', 'SAFE', 'HIGH', 'WIN'))
-summary(bigjoin)
+bigjoin1$tsb <- factor(bigjoin1$tsb, levels = c('ELIM', 'BOTTOM', 'SAFE', 'HIGH', 'WIN'))
+bigjoin2$tsb <- factor(bigjoin2$tsb, levels = c('ELIM', 'BOTTOM', 'SAFE', 'HIGH', 'WIN'))
+#summary(bigjoin)
 ```
 ```{r pt values}
-bigjoin <- bigjoin %>%
+bigjoin1 <- bigjoin1 %>%
   mutate(score = case_when(tsb == 'WIN' ~ 1,
                          tsb == 'HIGH' ~ .5,
                          tsb == 'SAFE' ~ 0,
                          tsb == 'BOTTOM' ~ -.5,
                          tsb == 'ELIM' ~ -1))
-bigjoin %>% group_by(genres) %>% summarise(avgscore = mean(score)) %>% arrange(desc(avgscore))
+bigjoin1 %>% group_by(genres) %>% summarise(avgscore = mean(score)) %>% arrange(desc(avgscore))
+
+bigjoin2 <- bigjoin2 %>%
+  mutate(score = case_when(tsb == 'WIN' ~ 1,
+                         tsb == 'HIGH' ~ .5,
+                         tsb == 'SAFE' ~ 0,
+                         tsb == 'BOTTOM' ~ -.5,
+                         tsb == 'ELIM' ~ -1))
+bigjoin2 %>% group_by(genres) %>% summarise(avgscore = mean(score)) %>% arrange(desc(avgscore))
 ```
 
-```{r PLOT}
- #439 results approx normally distributed- separate entry for each genre that each character is in, 
-summary(bigjoin$tsb)
-plot(bigjoin$tsb)
+```{r PLOT1}
+#439 results approx normally distributed- separate entry for each genre that each character is in, 
+summary(bigjoin1$tsb)
+summary(bigjoin2$tsb)
+plot(bigjoin1$tsb)
+plot(bigjoin2$tsb)
+```
 
-#option to disregard All Stars or regular (bigjoin %>% filter(regas == 'reg') %>% group_by(tsb))
+
+```{r PLOT2}
+#I'd like to have an option to disregard All Stars or Canada (non-Ru) regular (bigjoin %>% filter(regas == 'reg') %>% group_by(tsb))
+
+#-----
 #one entry for each genre within a character
-bigjoin %>% group_by(tsb) %>% ggplot(., aes(x = tsb)) + geom_bar()
+bigjoin2 %>% group_by(tsb) %>% ggplot(., aes(x = tsb)) + geom_bar()
 
 #Score instead of placement (same)
-bigjoin %>% group_by(score) %>% ggplot(., aes(x = score)) + geom_bar()
-
+bigjoin2 %>% group_by(score) %>% ggplot(., aes(x = score)) + geom_bar()
+#------
 #what about how all the QUEENS overall have done, disregarding characters? (BthDQ has one win)
-bigjoin %>% distinct(uniqueid, queen, tsb) %>% group_by(queen) %>% ggplot(aes(x = tsb)) + geom_bar()
-bigjoin %>% distinct(uniqueid, queen, tsb) %>% group_by(queen)
+bigjoin1 %>% distinct(uniqueid, queen, tsb) %>% group_by(queen) %>% ggplot(aes(x = tsb)) + geom_bar()
+bigjoin1 %>% distinct(uniqueid, queen, tsb) %>% group_by(queen)
+
+bigjoin2 %>% distinct(uniqueid, queen, tsb) %>% group_by(queen) %>% ggplot(aes(x = tsb)) + geom_bar()
+bigjoin2 %>% distinct(uniqueid, queen, tsb) %>% group_by(queen)
 
 #what about how distinct CHARACTERS do? (entry for each character in every episode)
-bigjoin %>% distinct(uniqueid, character, tsb) %>% ggplot(aes(x = tsb)) + geom_bar()
-bigjoin %>% distinct(uniqueid, character, tsb)
+bigjoin2 %>% distinct(uniqueid, character, tsb) %>% ggplot(aes(x = tsb)) + geom_bar()
+bigjoin2 %>% distinct(uniqueid, character, tsb)
 ```
+```{r Fullfacet take two- potential!}
+library('scales')
+#fullfacet <- bigjoin2 %>% group_by(tsb) %>% ggplot(aes(tsb), labels = TRUE) + geom_bar(aes(y = (..count..)/tapply(..count..,..PANEL..,sum)[..PANEL..])) + stat_bin(aes(stat='count'), vjust = 0, geom='text', position='identity') 
+#fullfacet
+
+ff <- bigjoin2 %>% group_by(tsb) %>% ggplot(aes(tsb), labels = TRUE) + geom_bar()
+ff <- ff + geom_text(aes(label=..count..), stat='count', y = 114) + facet_wrap(~genres)
+
+#+ facet_wrap(~genres)
+#fullfacet
+geom_bar(aes(y = (..count..)/tapply(..count..,..PANEL..,sum)[..PANEL..]))
+
+ff
+ff %+% dplyr::filter(bigjoin2, genres %in% c('fashion', 'histfict'))
+```
+
+
+
+
+
+
+
 ```{r, PHASE OUT- scared to delete, eval = FALSE}
 #Multi-hyphenates counted multiple times, how do different genres do?
 fullfacet <- bigjoin %>% group_by(tsb) %>% ggplot(aes(tsb)) + geom_bar() + facet_wrap(~genres)
@@ -125,14 +179,15 @@ genrebar <- genrecheck %>% ggplot(aes(x=tsb), fill = genres, group = genres) + g
 genrebar
 ```
 
-```{r CRUX}
+```{r CRUX- Phase out}
 #examine genres- double check
-#bigjoin %>% filter(genres == 'Actor')
+#bigjoin %>% filter(genres == 'TV')
 #--------------------------------------------------------------
-genrecheck <- bigjoin %>% distinct(uniqueid, character, tsb, score, genres)
-genrecheck <- genrecheck %>% filter(genres %in% c('Reality', 'RH'))
+genrecheck <- bigjoin1 %>% distinct(uniqueid, character, tsb, score, genres)
+genrecheck <- genrecheck %>% filter(genres %in% c('Reality', 'Government'))
 genrecheck
-genredens <- genrecheck %>% ggplot(., aes(x=tsb, group=genres, fill = genres)) + geom_density(adjust = .5, alpha = .5)
+
+genredens <- genrecheck %>% ggplot(., aes(x=tsb, group=genres, fill = genres)) + geom_bar()
 genredens
 #--------------------------------------------------------------
 genrebar <- genrecheck %>% group_by(genres) %>% mutate(genre_count = n()) %>%
@@ -141,33 +196,71 @@ genrebar <- genrecheck %>% group_by(genres) %>% mutate(genre_count = n()) %>%
   ggplot(aes(x = tsb)) + geom_bar()+ facet_wrap(~genre_update)
 genrebar
 ```
+```{r CRUX2}
+#examine genres- double check
+#bigjoin %>% filter(genres == 'TV')
+#------------
+
+#For RuPaul Only
+bigjoin1 %>% filter(internat != 'CAN')
+#Disregard All-Stars Formats
+bigjoin1 %>% filter(regas == 'reg')
+
+#--------------------------------------------------------------
+genrecheck <- bigjoin1 %>% distinct(uniqueid, season, internat, character, tsb, score, genres)
+genrecheck <- genrecheck %>% filter(genres %in% c('Athlete', 'Reality'))
+#--------------------------------------------------------------
+genrebar <- genrecheck %>% group_by(genres) %>% mutate(genre_count = n(), avgscore = round(mean(score), 3)) %>%
+  ungroup() %>%
+  mutate(genre_update = paste0(genres, "; n=", genre_count, "; Mean Score: ", avgscore)) %>%
+  ggplot(aes(x = tsb)) + geom_bar()+ scale_y_continuous(breaks= pretty_breaks()) + facet_wrap(~genre_update) + labs(title = 'Genre Comparison by Count', x = 'Placement', y = 'Count')
+genrebar
+#^THIS IS GOOD
+
+#---------------------
+ggplot(genrecheck %>% group_by(genres) %>% mutate(weight = 1/n()), 
+       aes(x = tsb, fill = genres)) +
+  geom_bar(aes(weight = weight), stat = 'count', position = 'dodge') + labs(title = 'Percent Placement by Genre', x = 'Placement', y = 'Percentage')
+```
+```{r TABLE TAB BEHIND THESE PLOTS}
+genrecheck %>% group_by(genres) %>% select(-1)
+```
+
+
+
+```{r genre re-re-examine}
+summary(bigjoin2)
+bigjoin2 %>% filter(genres == 'entertainer')
+```
 
 ```{r T-TESTING}
-
 ### I am suspicious of trying to do t-testing on this, because 
 #install.packages('rstatix')
 library(rstatix)
-genrecheck
-?t_test
-genrecheck$score
-genrecheck%>% group_by(genres) %>% get_summary_stats(score, type = "mean_sd")
-genreanova <- genrecheck %>% anova_test(score ~ genres)
-genreanova #p-value here is less than .05, there are statistically-significant differences between the groups (.031)
+genrecheck2 <- bigjoin2 %>% distinct(uniqueid, character, tsb, score, genres)
+genrecheck2
+genrecheck2$score
+genrecheck2 %>% group_by(genres) %>% get_summary_stats(score, type = "mean_sd")
+genreanova <- genrecheck2 %>% anova_test(score ~ genres)
+genreanova #p-value here is .027, there are statistically-significant differences between the groups!
 
-genreanova2 <- trimmedgc %>% anova_test(score ~ genres)
-genreanova2 (.021)
 ```
 
 
 ```{r T-TESTING, Pairwise}
 #pairwise comparisons OK I am struggling here. Can't get much out of these pairwise comparisons, which I guess is ok? but the anova says there's a statistically-significant difference among the groups.
-trimmedgc <- genrecheck %>% group_by(genres) %>% filter(n() >= 2) %>% ungroup()
-trimmedgc
-trimmedgc$score <- as.numeric(trimmedgc$score)
-?pairwise.t.test
-pwc <- pairwise.t.test(trimmedgc$score, trimmedgc$genres, p.adj= 'bonferroni')
+#trimmedgc <- genrecheck %>% group_by(genres) %>% filter(n() >= 2) %>% ungroup()
+#trimmedgc
+#trimmedgc$score <- as.numeric(trimmedgc$score)
+#?pairwise.t.test
+
+pwc <- pairwise.t.test(genrecheck2$score, genrecheck2$genres, p.adj= 'none')
+pwc
+?t.test
+
+  
 class(trimmedgc$score)
-wilcox.test(trimmedgc$score,trimmedgc$genres, p.adj= 'bonferroni')
+#wilcox.test(trimmedgc$score,trimmedgc$genres, p.adj= 'bonferroni')
 ```
 
 ```{r DEAD VS ALIVE- plots and t-testing}
