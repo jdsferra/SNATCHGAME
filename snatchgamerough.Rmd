@@ -43,12 +43,10 @@ chars2
 ```{r eppivot}
 #eps[10:31]
 epspivot <- pivot_longer(eps, cols = 10:31, names_to = 'plcmnt', values_to = 'queen', values_drop_na = T) %>% filter(queen != 'N/A')
-epspivot$queen <- replace(epspivot$queen, epspivot$queen == "Trinity The Tuck", "Trinity the Tuck")
 ```
 
 ```{r queenpivot}
 queenspivot <- pivot_longer(queens, cols = 3:4, values_to = 'character') %>% drop_na(character) %>% select(c(1, 2, 4))
-queenspivot$queen[queenspivot$queen == "Trinity The Tuck"] <- "Trinity the Tuck"
 ```
 
 ```{r char1pivot}
@@ -57,7 +55,7 @@ char1pivot <- pivot_longer(chars1, cols = 3:5, values_to = 'genres') %>% drop_na
 char1pivot <- char1pivot[-3]
 ```
 ```{r char2pivot}
-char2pivot <- pivot_longer(chars2, cols = 3:12, values_to = 'genres') %>% drop_na(genres)
+char2pivot <- pivot_longer(chars2, cols = 3:13, values_to = 'genres') %>% drop_na(genres)
 char2pivot = char2pivot[-4]
 char2pivot <- char2pivot %>% rename('genres' = 'name')
 ```
@@ -108,6 +106,10 @@ bigjoin2 <- bigjoin2 %>%
                          tsb == 'BOTTOM' ~ -.5,
                          tsb == 'ELIM' ~ -1))
 bigjoin2 %>% group_by(genres) %>% summarise(avgscore = mean(score)) %>% arrange(desc(avgscore))
+```
+```{r}
+write.csv(bigjoin1, 'bigjoin1.csv', row.names=F)
+write.csv(bigjoin2, 'bigjoin2.csv', row.names=F)
 ```
 
 ```{r PLOT1}
@@ -202,13 +204,13 @@ genrebar
 #------------
 
 #For RuPaul Only
-bigjoin1 %>% filter(internat != 'CAN')
+#bigjoin1 %>% filter(internat != 'CAN')
 #Disregard All-Stars Formats
-bigjoin1 %>% filter(regas == 'reg')
+#bigjoin1 %>% filter(regas == 'reg')
 
 #--------------------------------------------------------------
-genrecheck <- bigjoin1 %>% distinct(uniqueid, season, internat, character, tsb, score, genres)
-genrecheck <- genrecheck %>% filter(genres %in% c('Athlete', 'Reality'))
+genrecheck <- bigjoin2 %>% distinct(uniqueid, season, internat, queen, character, tsb, score, genres)
+genrecheck <- genrecheck %>% filter(genres %in% c('musician', 'pubfig'))
 #--------------------------------------------------------------
 genrebar <- genrecheck %>% group_by(genres) %>% mutate(genre_count = n(), avgscore = round(mean(score), 3)) %>%
   ungroup() %>%
@@ -221,8 +223,14 @@ genrebar
 ggplot(genrecheck %>% group_by(genres) %>% mutate(weight = 1/n()), 
        aes(x = tsb, fill = genres)) +
   geom_bar(aes(weight = weight), stat = 'count', position = 'dodge') + labs(title = 'Percent Placement by Genre', x = 'Placement', y = 'Percentage')
+
+#---
+genrecheck %>% group_by(genres) %>% mutate(weight = 1/n()) %>%
+         ggplot(aes(x = tsb, fill = genres)) + geom_bar(aes(weight = weight), stat = 'count', position = 'dodge') + 
+    labs(title = 'Percent Placement by Genre', x = 'Placement', y = 'Percentage')
+
 ```
-```{r TABLE TAB BEHIND THESE PLOTS}
+```{r TABLE TAB BEHIND THESE PLOTS- ADD QUEENS}
 genrecheck %>% group_by(genres) %>% select(-1)
 ```
 
