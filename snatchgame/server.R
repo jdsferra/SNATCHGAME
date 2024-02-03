@@ -21,7 +21,7 @@ output$bar1 <- renderPlot(
     scale_fill_manual(values = c("#8344AD", "#27AE60")) + facet_wrap(~genre_update) +
     labs(title = 'Genre Comparison by Count', x = 'Placement', y = 'Count')
 )
-  
+
 output$freq1 <- renderPlot(
   genrecheck1() %>% group_by(genres) %>% mutate(weight = 1/n()) %>%
          ggplot(aes(x = tsb, fill = genres)) + geom_bar(aes(weight = weight), stat = 'count', position = 'dodge') + 
@@ -53,6 +53,7 @@ output$table2 <- renderTable(genrecheck2() %>% group_by(genres) %>% select(-1))
 pwjoin <- bigjoin2 %>% distinct(uniqueid, season, internat, queen, character, tsb, score, genres)
 pw <- pairwise.t.test(pwjoin$score, pwjoin$genres, p.adj= 'none')
 pwtt <- data.table(pw[['p.value']], keep.rownames = T) %>% rename(X = rn) %>% mutate_if(is.numeric, ~round(., 4))
+pwtt[is.na(pwtt)] <- ""
 output$ttest <- renderTable(pwtt)
 
 #DEAD OR ALIVE

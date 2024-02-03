@@ -1,0 +1,113 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+```{r import and name}
+getwd()
+library(tidyverse)
+eps <- read.csv('./SGStats/eps.csv')
+queens <- read.csv('./SGStats/queens.csv')
+names(queens) <- queens[1,]
+queens <- queens[-1,]
+colnames(queens)[2] <- 'queen'
+chars <- read.csv('./SGStats/chars.csv')
+```
+
+
+```{r look at eps}
+sapply(eps, class)
+eps$airdate <- as.Date(eps$airdate)
+eps$regas <- as.factor(eps$regas)
+eps$internat <- as.factor(eps$internat)
+eps$specialformat <- as.factor(eps$specialformat)
+summary(eps)
+```
+```{r look at queens}
+sapply(queens, class)
+queens$character2[queens$character2 == "N/A"] <- NA
+queens$uniqueid <- as.numeric(queens$uniqueid)
+```
+
+```{r look at chars}
+sapply(chars, class)
+chars$alive <- as.factor(chars$alive)
+chars$genre <- as.factor(chars$genre)
+chars$genre2 <- as.factor(chars$genre2)
+chars$genre3 <- as.factor(chars$genre3)
+chars1 <- chars[1:5]
+chars2 <- chars[, -c(3:5)]
+chars1
+chars2
+```
+
+```{r eppivot}
+#eps[10:31]
+epspivot <- pivot_longer(eps, cols = 10:31, names_to = 'plcmnt', values_to = 'queen', values_drop_na = T) %>% filter(queen != 'N/A')
+```
+
+```{r queenpivot}
+queenspivot <- pivot_longer(queens, cols = 3:4, values_to = 'character') %>% drop_na(character) %>% select(c(1, 2, 4))
+```
+
+```{r char1pivot}
+chars1[4:5][chars1[4:5] == "N/A"] <- NA
+char1pivot <- pivot_longer(chars1, cols = 3:5, values_to = 'genres') %>% drop_na(genres)
+char1pivot <- char1pivot[-3]
+```
+```{r char2pivot}
+char2pivot <- pivot_longer(chars2, cols = 3:13, values_to = 'genres') %>% drop_na(genres)
+char2pivot = char2pivot[-4]
+char2pivot <- char2pivot %>% rename('genres' = 'name')
+```
+
+
+```{r epqueen Join}
+epqueenjoin <- inner_join(epspivot, queenspivot, by = c('uniqueid', 'queen'), multiple = 'all')
+myby <- join_by(character == char)
+bigjoin1 <- inner_join(epqueenjoin, char1pivot, myby)
+bigjoin2 <- inner_join(epqueenjoin, char2pivot, myby)
+bigjoin2$genres <- as.factor(bigjoin2$genres)
+summary(bigjoin2)
+```
+```{r summarize placements}
+bigjoin1 <- bigjoin1 %>%
+  mutate(tsb = case_when(startsWith(tolower(plcmnt), 'safe') ~ 'SAFE',
+                         startsWith(tolower(plcmnt), 'win') ~ 'WIN',
+                         startsWith(tolower(plcmnt), 'high') ~ 'HIGH',
+                         startsWith(tolower(plcmnt), 'bottom') ~ 'BOTTOM',
+                          startsWith(tolower(plcmnt), 'elim') ~ 'ELIM'))
+
+bigjoin2 <- bigjoin2 %>%
+  mutate(tsb = case_when(startsWith(tolower(plcmnt), 'safe') ~ 'SAFE',
+                         startsWith(tolower(plcmnt), 'win') ~ 'WIN',
+                         startsWith(tolower(plcmnt), 'high') ~ 'HIGH',
+                         startsWith(tolower(plcmnt), 'bottom') ~ 'BOTTOM',
+                          startsWith(tolower(plcmnt), 'elim') ~ 'ELIM'))
+```
+
+```{r make and order factors}
+bigjoin1$tsb <- factor(bigjoin1$tsb, levels = c('ELIM', 'BOTTOM', 'SAFE', 'HIGH', 'WIN'))
+bigjoin2$tsb <- factor(bigjoin2$tsb, levels = c('ELIM', 'BOTTOM', 'SAFE', 'HIGH', 'WIN'))
+#summary(bigjoin)
+```
+```{r pt values}
+bigjoin1 <- bigjoin1 %>%
+  mutate(score = case_when(tsb == 'WIN' ~ 1,
+                         tsb == 'HIGH' ~ .5,
+                         tsb == 'SAFE' ~ 0,
+                         tsb == 'BOTTOM' ~ -.5,
+                         tsb == 'ELIM' ~ -1))
+bigjoin1 %>% group_by(genres) %>% summarise(avgscore = mean(score)) %>% arrange(desc(avgscore))
+
+bigjoin2 <- bigjoin2 %>%
+  mutate(score = case_when(tsb == 'WIN' ~ 1,
+                         tsb == 'HIGH' ~ .5,
+                         tsb == 'SAFE' ~ 0,
+                         tsb == 'BOTTOM' ~ -.5,
+                         tsb == 'ELIM' ~ -1))
+bigjoin2 %>% group_by(genres) %>% summarise(avgscore = mean(score)) %>% arrange(desc(avgscore))
+```
+```{r}
+write.csv(bigjoin1, 'bigjoin1.csv', row.names=F)
+write.csv(bigjoin2, 'bigjoin2.csv', row.names=F)
+```

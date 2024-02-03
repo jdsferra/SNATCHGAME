@@ -198,6 +198,21 @@ genrebar <- genrecheck %>% group_by(genres) %>% mutate(genre_count = n()) %>%
   ggplot(aes(x = tsb)) + geom_bar()+ facet_wrap(~genre_update)
 genrebar
 ```
+```{r}
+d <-  genrecheck %>% group_by(genres) %>% mutate(genre_count = n(), avgscore = round(mean(score), 3)) %>%
+    ungroup() %>% mutate(
+                        genre_update = factor(genres, levels = c('Reality', 'Government')),
+                        genre_update = paste0(genres, "; n=", genre_count, "; Mean Score: ", avgscore),
+                         )
+class(d$genre_update)
+
+#%>%
+#    ggplot(aes(x = tsb, fill = genres)) + geom_bar()+ scale_y_continuous(breaks= pretty_breaks()) + 
+#    scale_fill_manual(values = c("#8344AD", "#27AE60")) + facet_wrap(~genre_update) +
+#    labs(title = 'Genre Comparison by Count', x = 'Placement', y = 'Count')
+
+```
+
 ```{r CRUX2}
 #examine genres- double check
 #bigjoin %>% filter(genres == 'TV')

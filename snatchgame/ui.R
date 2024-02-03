@@ -20,10 +20,35 @@ dashboardBody(
                                    h5("This app compares how different kinds of characters perform in the 'Snatch Game' episodes\
               of RuPaul's Drag Race, including all worldwide English-language seasons and All-Stars formats."),
                                    h5("How do fashion icons fare against musicians? Are the Golden Girls cursed? Answer these questions and more!"),
-                                   h5("Placements are ranked as ELIMINATED, BOTTOM, SAFE, HIGH, WIN and are scored -1, -.5, 0, .5, and 1."),
-                                   h3('How it Works'),
+                                   h5("Placements are ranked as ELIMINATED, BOTTOM, SAFE, HIGH, WIN and are scored -1, -.5, 0, .5, and 1.\
+                                   An average score that's positive means that that category does well, while negative means the group is often\
+                                   in the bottom or eliminated."),
+                                   h3(strong('How it Works')),
                                    h5("'Compare Specific' and 'Compare General' allows you to select two genres of character and compare\
-                                        their placements. 'Specific' features ~30 genres while 'General' groups them into 11 categories."),
+                                        their placements. 'Specific' features ~30 genres while 'General' groups them into 10.\
+                                        When you select two genres, the page displays two plots, one comparing placements by count, and\
+                                        one underneath comparing in terms of percentages, plus the table with the plotted queens."),
+                                  h4(strong('Specific')),
+                                  h5("In the specific grouping, characters have two or three genre labels, including 'Actor', 'Drag Queen', 'Reality',\
+                                     and others. 'RH' and 'GG' are special labels for Real Housewives and Golden Girls, characters suspected to be\
+                                     cursed."),
+                                  h4(strong('General')),
+                                  h5("In the general grouping, characters mostly only have one, more 'zoomed-out' label:"),
+                                  tags$ul(
+                                  tags$li("TV Presenters: 'TV'"), 
+                                  tags$li("Comedic Entertainers: 'ComedicEnt'"), 
+                                  tags$li("Non-Comedic Entertainers: 'NonComedicEnt'"),
+                                  tags$li("Public Figures and News Stories: 'PubFig'"),
+                                  tags$li("Streamers, YouTubers, and Viral Stars: 'Internet'"),
+                                  tags$li("Historical, Fictional, and Religious: 'HistFict'"),
+                                  tags$li("Drag Queens, Performance Artists, and Others Hard to Categorize: 'FarOut'"),
+                                  tags$li("Musicians"),
+                                  tags$li("Fashion Icons"),
+                                  tags$li("Writers"),
+                                ),
+                                  h4(strong('Remaining Tabs')),
+                                  h5("The remaining tabs include the results of pairwise t-testing on the more general grouping, a comparison between\
+                                  dead and alive characters, and my contact information. Keep in touch, and let me know what you think!"),
                                   div(img(src='pride.jpg', width="100%", style= "height: 100px" ), style="text-align: left"),
                                   h6("Image by rawpixel.com on Freepik")
                               ),

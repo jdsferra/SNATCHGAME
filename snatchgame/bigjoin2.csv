@@ -1,283 +1,283 @@
 "uniqueid","regas","season","internat","episode","airdate","nickname","specialformat","numqueens","plcmnt","queen","character","alive","genres","tsb","score"
-0,"reg",2,"US",4,2010-02-22,"The Snatch Game","0",9,"win1","Tatianna","Britney Spears","1","musician","WIN",1
-0,"reg",2,"US",4,2010-02-22,"The Snatch Game","0",9,"high1","Pandora Boxx","Carol Channing","0","comedicent","HIGH",0.5
-0,"reg",2,"US",4,2010-02-22,"The Snatch Game","0",9,"safe1","Raven","Paris Hilton","1","reality","SAFE",0
-0,"reg",2,"US",4,2010-02-22,"The Snatch Game","0",9,"safe2","Tyra Sanchez","Beyoncé","1","musician","SAFE",0
-0,"reg",2,"US",4,2010-02-22,"The Snatch Game","0",9,"safe3","Jessica Wild","RuPaul","1","farout","SAFE",0
-0,"reg",2,"US",4,2010-02-22,"The Snatch Game","0",9,"safe3","Jessica Wild","RuPaul","1","reality","SAFE",0
-0,"reg",2,"US",4,2010-02-22,"The Snatch Game","0",9,"safe4","Sahara Davenport","Whitney Houston","0","musician","SAFE",0
-0,"reg",2,"US",4,2010-02-22,"The Snatch Game","0",9,"safe5","Jujubee","Kimora Lee","1","reality","SAFE",0
-0,"reg",2,"US",4,2010-02-22,"The Snatch Game","0",9,"bottom1","Morgan McMichaels","Pink","1","musician","BOTTOM",-0.5
-0,"reg",2,"US",4,2010-02-22,"The Snatch Game","0",9,"eliminated1","Kylie Sonique Love","Lady Gaga","1","musician","ELIM",-1
-1,"reg",3,"US",6,2011-02-21,"The Snatch Game","0",9,"high1","Raja","Tyra Banks","1","fashion","HIGH",0.5
-1,"reg",3,"US",6,2011-02-21,"The Snatch Game","0",9,"high2","Alexis Mateo","Alicia Keys","1","musician","HIGH",0.5
-1,"reg",3,"US",6,2011-02-21,"The Snatch Game","0",9,"safe1","Manila Luzon","Imelda Marcos","1","pubfig","SAFE",0
-1,"reg",3,"US",6,2011-02-21,"The Snatch Game","0",9,"safe2","Yara Sofia","Amy Winehouse","1","musician","SAFE",0
-1,"reg",3,"US",6,2011-02-21,"The Snatch Game","0",9,"safe3","Carmen Carrera","Jennifer Lopez","1","musician","SAFE",0
-1,"reg",3,"US",6,2011-02-21,"The Snatch Game","0",9,"safe4","Shangela","Tina Turner","1","musician","SAFE",0
-1,"reg",3,"US",6,2011-02-21,"The Snatch Game","0",9,"bottom1","Delta Work","Cher","1","musician","BOTTOM",-0.5
-1,"reg",3,"US",6,2011-02-21,"The Snatch Game","0",9,"eliminated1","Mariah","Joan Crawford","0","noncomedicent","ELIM",-1
-2,"reg",4,"US",5,2012-02-27,"Snatch Game","0",9,"win1","Chad Michaels","Cher","1","musician","WIN",1
-2,"reg",4,"US",5,2012-02-27,"Snatch Game","0",9,"high1","Sharon Needles","Michelle Visage","1","reality","HIGH",0.5
-2,"reg",4,"US",5,2012-02-27,"Snatch Game","0",9,"high2","Willam","Jessica Simpson","1","musician","HIGH",0.5
-2,"reg",4,"US",5,2012-02-27,"Snatch Game","0",9,"safe2","Latrice Royale","Aretha Franklin","1","musician","SAFE",0
-2,"reg",4,"US",5,2012-02-27,"Snatch Game","0",9,"safe3","DiDa Ritz","Wendy Williams","1","tv","SAFE",0
-2,"reg",4,"US",5,2012-02-27,"Snatch Game","0",9,"safe4","Jiggly Caliente","Snooki","1","reality","SAFE",0
-2,"reg",4,"US",5,2012-02-27,"Snatch Game","0",9,"bottom1","Milan","Diana Ross","1","musician","BOTTOM",-0.5
-2,"reg",4,"US",5,2012-02-27,"Snatch Game","0",9,"eliminated1","Kenya Michaels","Beyoncé","1","musician","ELIM",-1
-3,"reg",5,"US",5,2013-02-25,"Snatch Game","0",9,"win1","Jinkx Monsoon","Little Edie","0","pubfig","WIN",1
-3,"reg",5,"US",5,2013-02-25,"Snatch Game","0",9,"high1","Alaska","Lady Bunny","1","farout","HIGH",0.5
-3,"reg",5,"US",5,2013-02-25,"Snatch Game","0",9,"high2","Roxxxy Andrews","Tamar Braxton","1","reality","HIGH",0.5
-3,"reg",5,"US",5,2013-02-25,"Snatch Game","0",9,"safe1","Coco Montrese","Janet Jackson","1","musician","SAFE",0
-3,"reg",5,"US",5,2013-02-25,"Snatch Game","0",9,"safe2","Alyssa Edwards","Katy Perry","1","musician","SAFE",0
-3,"reg",5,"US",5,2013-02-25,"Snatch Game","0",9,"safe3","Ivy Winters","Marilyn Monroe","0","comedicent","SAFE",0
-3,"reg",5,"US",5,2013-02-25,"Snatch Game","0",9,"safe4","Jade Jolie","Taylor Swift","1","musician","SAFE",0
-3,"reg",5,"US",5,2013-02-25,"Snatch Game","0",9,"bottom1","Detox","Kesha","1","musician","BOTTOM",-0.5
-3,"reg",5,"US",5,2013-02-25,"Snatch Game","0",9,"eliminated1","Lineysha Sparx","Celia Cruz","0","musician","ELIM",-1
-4,"reg",6,"US",5,2014-03-24,"Snatch Game","0",10,"win1","BenDeLaCreme","Maggie Smith","1","comedicent","WIN",1
-4,"reg",6,"US",5,2014-03-24,"Snatch Game","0",10,"high1","Bianca Del Rio","Judge Judy","1","tv","HIGH",0.5
-4,"reg",6,"US",5,2014-03-24,"Snatch Game","0",10,"high2","Adore Delano","Anna Nicole Smith","0","reality","HIGH",0.5
-4,"reg",6,"US",5,2014-03-24,"Snatch Game","0",10,"safe1","Courtney Act","Fran Drescher","1","comedicent","SAFE",0
-4,"reg",6,"US",5,2014-03-24,"Snatch Game","0",10,"safe2","Darienne Lake","Paula Deen","1","tv","SAFE",0
-4,"reg",6,"US",5,2014-03-24,"Snatch Game","0",10,"safe3","Joslyn Fox","Teresa Giudice","1","reality","SAFE",0
-4,"reg",6,"US",5,2014-03-24,"Snatch Game","0",10,"safe4","Trinity K. Bonet","Nicki Minaj","1","musician","SAFE",0
-4,"reg",6,"US",5,2014-03-24,"Snatch Game","0",10,"safe5","Milk","Julia Child","0","tv","SAFE",0
-4,"reg",6,"US",5,2014-03-24,"Snatch Game","0",10,"bottom1","Laganja Estranja","Rachel Zoe","1","reality","BOTTOM",-0.5
-4,"reg",6,"US",5,2014-03-24,"Snatch Game","0",10,"eliminated1","Gia Gunn","Kim Kardashian","1","reality","ELIM",-1
-5,"reg",7,"US",7,2015-04-13,"Snatch Game","0",8,"win1","Ginger Minj","Adele","1","musician","WIN",1
-5,"reg",7,"US",7,2015-04-13,"Snatch Game","0",8,"win2","Kennedy Davenport","Little Richard","1","musician","WIN",1
-5,"reg",7,"US",7,2015-04-13,"Snatch Game","0",8,"high1","Katya","Suze Orman","1","tv","HIGH",0.5
-5,"reg",7,"US",7,2015-04-13,"Snatch Game","0",8,"safe1","Pearl","Big Ang","1","reality","SAFE",0
-5,"reg",7,"US",7,2015-04-13,"Snatch Game","0",8,"safe2","Violet Chachki","Alyssa Edwards","1","farout","SAFE",0
-5,"reg",7,"US",7,2015-04-13,"Snatch Game","0",8,"safe3","Miss Fame","Donatella Versace","1","fashion","SAFE",0
-5,"reg",7,"US",7,2015-04-13,"Snatch Game","0",8,"bottom1","Jaidynn Diore Fierce","Raven-Symoné","1","comedicent","BOTTOM",-0.5
-5,"reg",7,"US",7,2015-04-13,"Snatch Game","0",8,"eliminated1","Max","Sharon Needles","1","farout","ELIM",-1
-6,"reg",8,"US",5,2016-04-04,"Supermodel Snatch Game","0",8,"win1","Bob the Drag Queen","Uzo Aduba","1","comedicent","WIN",1
-6,"reg",8,"US",5,2016-04-04,"Supermodel Snatch Game","0",8,"win1","Bob the Drag Queen","Carol Channing","0","comedicent","WIN",1
-6,"reg",8,"US",5,2016-04-04,"Supermodel Snatch Game","0",8,"high1","Derrick Barry","Britney Spears","1","musician","HIGH",0.5
-6,"reg",8,"US",5,2016-04-04,"Supermodel Snatch Game","0",8,"high2","Thorgy Thor","Michael Jackson","0","musician","HIGH",0.5
-6,"reg",8,"US",5,2016-04-04,"Supermodel Snatch Game","0",8,"safe1","Chi Chi DeVayne","Eartha Kitt","0","noncomedicent","SAFE",0
-6,"reg",8,"US",5,2016-04-04,"Supermodel Snatch Game","0",8,"safe2","Robbie Turner","Diana Vreeland","0","fashion","SAFE",0
-6,"reg",8,"US",5,2016-04-04,"Supermodel Snatch Game","0",8,"safe3","Kim Chi","Kimmy Jong-Un","1","pubfig","SAFE",0
-6,"reg",8,"US",5,2016-04-04,"Supermodel Snatch Game","0",8,"bottom1","Naomi Smalls","Tiffany Pollard","1","reality","BOTTOM",-0.5
-6,"reg",8,"US",5,2016-04-04,"Supermodel Snatch Game","0",8,"eliminated1","Acid Betty","Nancy Grace","1","tv","ELIM",-1
-7,"reg",9,"US",6,2017-04-28,"Snatch Game","0",10,"win1","Alexis Michelle","Liza Minnelli","1","comedicent","WIN",1
-7,"reg",9,"US",6,2017-04-28,"Snatch Game","0",10,"high1","Sasha Velour","Marlene Dietrich","0","comedicent","HIGH",0.5
-7,"reg",9,"US",6,2017-04-28,"Snatch Game","0",10,"safe1","Shea Couleé","Naomi Campbell","1","fashion","SAFE",0
-7,"reg",9,"US",6,2017-04-28,"Snatch Game","0",10,"safe2","Trinity the Tuck","Amanda Lepore","1","farout","SAFE",0
-7,"reg",9,"US",6,2017-04-28,"Snatch Game","0",10,"safe3","Valentina","Ariadna Gutiérrez","1","fashion","SAFE",0
-7,"reg",9,"US",6,2017-04-28,"Snatch Game","0",10,"safe4","Farrah Moan","Gigi Gorgeous","1","internet","SAFE",0
-7,"reg",9,"US",6,2017-04-28,"Snatch Game","0",10,"safe5","Aja","Alyssa Edwards","1","farout","SAFE",0
-7,"reg",9,"US",6,2017-04-28,"Snatch Game","0",10,"bottom1","Peppermint","NeNe Leakes","1","reality","BOTTOM",-0.5
-7,"reg",9,"US",6,2017-04-28,"Snatch Game","0",10,"eliminated1","Cynthia Lee Fontaine","Sofia Vergara","1","comedicent","ELIM",-1
-8,"reg",10,"US",7,2018-05-03,"Snatch Game","0",8,"high1","Eureka","Alana “Honey Boo Boo” Thompson","1","reality","HIGH",0.5
-8,"reg",10,"US",7,2018-05-03,"Snatch Game","0",8,"high2","Monét X Change","Maya Angelou","1","writer","HIGH",0.5
-8,"reg",10,"US",7,2018-05-03,"Snatch Game","0",8,"safe1","Kameron Michaels","Chyna","0","noncomedicent","SAFE",0
-8,"reg",10,"US",7,2018-05-03,"Snatch Game","0",8,"safe2","Asia O’Hara","Beyoncé","1","musician","SAFE",0
-8,"reg",10,"US",7,2018-05-03,"Snatch Game","0",8,"safe3","Miz Cracker","Dorothy Parker","0","writer","SAFE",0
-8,"reg",10,"US",7,2018-05-03,"Snatch Game","0",8,"bottom1","The Vixen","Blue Ivy Carter","1","pubfig","BOTTOM",-0.5
-8,"reg",10,"US",7,2018-05-03,"Snatch Game","0",8,"eliminated1","Monique Heart","Maxine Waters","1","pubfig","ELIM",-1
-9,"reg",11,"US",8,2019-04-18,"Snatch Game at Sea","0",8,"win1","Silky Nutmeg Ganache","Ts Madison","1","reality","WIN",1
-9,"reg",11,"US",8,2019-04-18,"Snatch Game at Sea","0",8,"high1","Nina West","Harvey Fierstein","1","comedicent","HIGH",0.5
-9,"reg",11,"US",8,2019-04-18,"Snatch Game at Sea","0",8,"high1","Nina West","Jo Anne Worley","1","comedicent","HIGH",0.5
-9,"reg",11,"US",8,2019-04-18,"Snatch Game at Sea","0",8,"high2","Shuga Cain","Charo","1","comedicent","HIGH",0.5
-9,"reg",11,"US",8,2019-04-18,"Snatch Game at Sea","0",8,"safe1","Vanessa Vanjie Mateo","Danielle Bregoli","1","internet","SAFE",0
-9,"reg",11,"US",8,2019-04-18,"Snatch Game at Sea","0",8,"safe2","Plastique Tiara","Lovely Mimi","1","internet","SAFE",0
-9,"reg",11,"US",8,2019-04-18,"Snatch Game at Sea","0",8,"bottom1","Brooke Lynn Hytes","Celine Dion","1","musician","BOTTOM",-0.5
-9,"reg",11,"US",8,2019-04-18,"Snatch Game at Sea","0",8,"bottom2","Yvie Oddly","Whoopi Goldberg","1","tv","BOTTOM",-0.5
-10,"reg",12,"US",6,2020-04-03,"Snatch Game","0",10,"win1","Gigi Goode","Maria the Robot","1","farout","WIN",1
-10,"reg",12,"US",6,2020-04-03,"Snatch Game","0",10,"high1","Sherry Pie","Katharine Hepburn","0","noncomedicent","HIGH",0.5
-10,"reg",12,"US",6,2020-04-03,"Snatch Game","0",10,"high2","Jackie Cox","Lisa Rinna","1","reality","HIGH",0.5
-10,"reg",12,"US",6,2020-04-03,"Snatch Game","0",10,"safe1","Crystal Methyd","Poppy","1","internet","SAFE",0
-10,"reg",12,"US",6,2020-04-03,"Snatch Game","0",10,"safe2","Heidi N Closet","Leslie Jones","1","comedicent","SAFE",0
-10,"reg",12,"US",6,2020-04-03,"Snatch Game","0",10,"safe4","Jan","Bernadette Peters","1","comedicent","SAFE",0
-10,"reg",12,"US",6,2020-04-03,"Snatch Game","0",10,"safe5","Jaida Essence Hall","Cardi B","1","musician","SAFE",0
-10,"reg",12,"US",6,2020-04-03,"Snatch Game","0",10,"bottom1","Brita","Jennifer Holliday","1","noncomedicent","BOTTOM",-0.5
-10,"reg",12,"US",6,2020-04-03,"Snatch Game","0",10,"eliminated1","Aiden Zhane","Patricia Quinn","1","comedicent","ELIM",-1
-11,"reg",13,"US",9,2021-03-05,"The Snatch Game","0",9,"win1","Gottmik","Paris Hilton","1","reality","WIN",1
-11,"reg",13,"US",9,2021-03-05,"The Snatch Game","0",9,"high1","Denali","Jonathan Van Ness","1","reality","HIGH",0.5
-11,"reg",13,"US",9,2021-03-05,"The Snatch Game","0",9,"high2","Rosé","Mary, Queen of Scots","0","histfict","HIGH",0.5
-11,"reg",13,"US",9,2021-03-05,"The Snatch Game","0",9,"safe2","Olivia Lux","Tabitha Brown","1","internet","SAFE",0
-11,"reg",13,"US",9,2021-03-05,"The Snatch Game","0",9,"safe3","Tina Burner","Richard Simmons","1","tv","SAFE",0
-11,"reg",13,"US",9,2021-03-05,"The Snatch Game","0",9,"safe4","Symone","Harriet Tubman","0","histfict","SAFE",0
-11,"reg",13,"US",9,2021-03-05,"The Snatch Game","0",9,"bottom1","Utica Queen","Bob Ross","0","tv","BOTTOM",-0.5
-11,"reg",13,"US",9,2021-03-05,"The Snatch Game","0",9,"eliminated1","Elliott with 2 Ts","Rue McClanahan","0","comedicent","ELIM",-1
-12,"reg",14,"US",10,2022-03-11,"Snatch Game","0",8,"win1","DeJa Skye","Lil Jon","1","musician","WIN",1
-12,"reg",14,"US",10,2022-03-11,"Snatch Game","0",8,"bottom2","Bosco","Gwyneth Paltrow","1","noncomedicent","BOTTOM",-0.5
-12,"reg",14,"US",10,2022-03-11,"Snatch Game","0",8,"bottom3","Daya Betty","Ozzy Osbourne","1","musician","BOTTOM",-0.5
-12,"reg",14,"US",10,2022-03-11,"Snatch Game","0",8,"bottom4","Jasmine Kennedie","Betsy DeVos","1","pubfig","BOTTOM",-0.5
-12,"reg",14,"US",10,2022-03-11,"Snatch Game","0",8,"bottom5","Jorgeous","Ilana Glazer","1","comedicent","BOTTOM",-0.5
-12,"reg",14,"US",10,2022-03-11,"Snatch Game","0",8,"bottom6","Lady Camden","William Shakespeare","0","histfict","BOTTOM",-0.5
-12,"reg",14,"US",10,2022-03-11,"Snatch Game","0",8,"bottom7","Willow Pill","Drew Barrymore","1","noncomedicent","BOTTOM",-0.5
-13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"win1","Loosey LaDuca","Joan Rivers","0","comedicent","WIN",1
-13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"high1","Mistress Isabelle Brooks","Rosie O'Donnell","1","tv","HIGH",0.5
-13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"high2","Marcia Marcia Marcia","Tim Gunn","1","fashion","HIGH",0.5
-13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"safe1","Anetra","Gorgena Ramsay","1","reality","SAFE",0
-13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"safe2","Luxx Noir London","Amanda Lepore","1","farout","SAFE",0
-13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"safe3","Salina EsTitties","The Virgin Mary","0","histfict","SAFE",0
-13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"safe4","Sasha Colby","Jan Crouch","0","tv","SAFE",0
-13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"safe5","Malaysia Babydoll Foxx","Saucy Santana","1","musician","SAFE",0
-13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"safe6","Jax","Mona Lisa","0","histfict","SAFE",0
-13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"safe7","Aura Mayari","Bretman Rock","1","internet","SAFE",0
-13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"safe8","Robin Fierce","Karen Huger","1","reality","SAFE",0
-13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"safe9","Amethyst","Patricia ""Tan Mom"" Krentcil","1","farout","SAFE",0
-13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"bottom1","Spice","Miley Cyrus","1","musician","BOTTOM",-0.5
-13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"eliminated1","Sugar","Trisha Paytas","1","internet","ELIM",-1
-14,"as",1,"US",2,2012-10-29,"Ru Paul’s Gaff-In","1",10,"win1","Alexis Mateo","Shakira","1","musician","WIN",1
-14,"as",1,"US",2,2012-10-29,"Ru Paul’s Gaff-In","1",10,"win2","Yara Sofia","Charo","1","comedicent","WIN",1
-14,"as",1,"US",2,2012-10-29,"Ru Paul’s Gaff-In","1",10,"high1","Chad Michaels","Bette Davis","0","noncomedicent","HIGH",0.5
-14,"as",1,"US",2,2012-10-29,"Ru Paul’s Gaff-In","1",10,"high2","Shannel","Lucille Ball","0","comedicent","HIGH",0.5
-14,"as",1,"US",2,2012-10-29,"Ru Paul’s Gaff-In","1",10,"safe1","Raven","Bea Arthur","0","comedicent","SAFE",0
-14,"as",1,"US",2,2012-10-29,"Ru Paul’s Gaff-In","1",10,"safe2","Jujubee","Fran Drescher","1","comedicent","SAFE",0
-14,"as",1,"US",2,2012-10-29,"Ru Paul’s Gaff-In","1",10,"bottom1","Latrice Royale","Oprah Winfrey","1","tv","BOTTOM",-0.5
-14,"as",1,"US",2,2012-10-29,"Ru Paul’s Gaff-In","1",10,"bottom2","Manila Luzon","Madonna","1","musician","BOTTOM",-0.5
-14,"as",1,"US",2,2012-10-29,"Ru Paul’s Gaff-In","1",10,"eliminated1","Nina Flowers","La Lupe","0","musician","ELIM",-1
-14,"as",1,"US",2,2012-10-29,"Ru Paul’s Gaff-In","1",10,"eliminated2","Tammie Brown","Tammy Faye","0","tv","ELIM",-1
-15,"as",2,"US",2,2016-09-01,"All Stars Snatch Game","0",8,"win1","Alaska","Mae West","0","comedicent","WIN",1
-15,"as",2,"US",2,2016-09-01,"All Stars Snatch Game","0",8,"win2","Katya","Björk","1","farout","WIN",1
-15,"as",2,"US",2,2016-09-01,"All Stars Snatch Game","0",8,"safe1","Alyssa Edwards","Joan Crawford","0","noncomedicent","SAFE",0
-15,"as",2,"US",2,2016-09-01,"All Stars Snatch Game","0",8,"safe2","Ginger Minj","Tammy Faye","0","tv","SAFE",0
-15,"as",2,"US",2,2016-09-01,"All Stars Snatch Game","0",8,"bottom1","Detox","Nancy Grace","1","tv","BOTTOM",-0.5
-15,"as",2,"US",2,2016-09-01,"All Stars Snatch Game","0",8,"bottom2","Roxxxy Andrews","Alaska","1","farout","BOTTOM",-0.5
-15,"as",2,"US",2,2016-09-01,"All Stars Snatch Game","0",8,"eliminated1","Tatianna","Ariana Grande","1","musician","ELIM",-1
-16,"as",3,"US",4,2018-02-15,"All Stars Snatch Program","0",7,"win1","Shangela","Jenifer Lewis","1","comedicent","WIN",1
-16,"as",3,"US",4,2018-02-15,"All Stars Snatch Program","0",7,"win2","BenDeLaCreme","Paul Lynde","0","comedicent","WIN",1
-16,"as",3,"US",4,2018-02-15,"All Stars Snatch Program","0",7,"high1","Aja","Crystal LaBeija","0","farout","HIGH",0.5
-16,"as",3,"US",4,2018-02-15,"All Stars Snatch Program","0",7,"safe1","BeBe Zahara Benet","Grace Jones","1","musician","SAFE",0
-16,"as",3,"US",4,2018-02-15,"All Stars Snatch Program","0",7,"safe1","BeBe Zahara Benet","Grace Jones","1","fashion","SAFE",0
-16,"as",3,"US",4,2018-02-15,"All Stars Snatch Program","0",7,"bottom1","Trixie Mattel","RuPaul","1","farout","BOTTOM",-0.5
-16,"as",3,"US",4,2018-02-15,"All Stars Snatch Program","0",7,"bottom1","Trixie Mattel","RuPaul","1","reality","BOTTOM",-0.5
-16,"as",3,"US",4,2018-02-15,"All Stars Snatch Program","0",7,"bottom2","Kennedy Davenport","Phaedra Parks","1","reality","BOTTOM",-0.5
-16,"as",3,"US",4,2018-02-15,"All Stars Snatch Program","0",7,"eliminated1","Chi Chi DeVayne","Maya Angelou","1","writer","ELIM",-1
-17,"as",4,"US",3,2018-12-28,"Snatch Game of Love","1",8,"win2","Trinity the Tuck","Caitlyn Jenner","1","reality","WIN",1
-17,"as",4,"US",3,2018-12-28,"Snatch Game of Love","1",8,"high1","Naomi Smalls","Wendy Williams","1","tv","HIGH",0.5
-17,"as",4,"US",3,2018-12-28,"Snatch Game of Love","1",8,"safe1","Monique Heart","Tiffany Haddish","1","comedicent","SAFE",0
-17,"as",4,"US",3,2018-12-28,"Snatch Game of Love","1",8,"safe2","Monét X Change","Whitney Houston","0","musician","SAFE",0
-17,"as",4,"US",3,2018-12-28,"Snatch Game of Love","1",8,"safe3","Latrice Royale","Della Reese","0","noncomedicent","SAFE",0
-17,"as",4,"US",3,2018-12-28,"Snatch Game of Love","1",8,"bottom1","Valentina","Eartha Kitt","0","noncomedicent","BOTTOM",-0.5
-17,"as",4,"US",3,2018-12-28,"Snatch Game of Love","1",8,"eliminated1","Gia Gunn","Jenny Bui","1","internet","ELIM",-1
-18,"as",5,"US",5,2020-07-03,"Snatch Game of Love","1",6,"win1","Shea Couleé","Flavor Flav","1","reality","WIN",1
-18,"as",5,"US",5,2020-07-03,"Snatch Game of Love","1",6,"bottom1","Jujubee","Eartha Kitt","0","noncomedicent","BOTTOM",-0.5
-18,"as",5,"US",5,2020-07-03,"Snatch Game of Love","1",6,"bottom2","Miz Cracker","Lady Gaga","1","musician","BOTTOM",-0.5
-18,"as",5,"US",5,2020-07-03,"Snatch Game of Love","1",6,"bottom3","Blair St. Clair","Ellen DeGeneres","1","tv","BOTTOM",-0.5
-18,"as",5,"US",5,2020-07-03,"Snatch Game of Love","1",6,"bottom4","Alexis Mateo","Walter Mercado","0","tv","BOTTOM",-0.5
-18,"as",5,"US",5,2020-07-03,"Snatch Game of Love","1",6,"eliminated1","India Ferrah","Jeffree Star","1","fashion","ELIM",-1
-19,"as",6,"US",8,2021-08-05,"Snatch Game of Love","1",6,"win1","Ginger Minj","Phyllis Diller","0","comedicent","WIN",1
-19,"as",6,"US",8,2021-08-05,"Snatch Game of Love","1",6,"high1","Kylie Sonique Love","Dolly Parton","1","musician","HIGH",0.5
-19,"as",6,"US",8,2021-08-05,"Snatch Game of Love","1",6,"high2","Eureka","Divine","0","farout","HIGH",0.5
-19,"as",6,"US",8,2021-08-05,"Snatch Game of Love","1",6,"bottom1","Trinity K. Bonet","Whitney Houston","0","musician","BOTTOM",-0.5
-19,"as",6,"US",8,2021-08-05,"Snatch Game of Love","1",6,"eliminated1","Pandora Boxx","Kim Cattrall","1","comedicent","ELIM",-1
-20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"win1","Jinkx Monsoon","Natasha Lyonne","1","comedicent","WIN",1
-20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"win1","Jinkx Monsoon","Judy Garland","0","comedicent","WIN",1
-20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"win2","Trinity the Tuck","Satan","0","histfict","WIN",1
-20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"win2","Trinity the Tuck","Leslie Jordan","1","comedicent","WIN",1
-20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"high1","Monét X Change","Mike Tyson","1","farout","HIGH",0.5
-20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"high1","Monét X Change","Martin Lawrence","1","comedicent","HIGH",0.5
-20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"high2","Raja","Madame","0","comedicent","HIGH",0.5
-20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"high2","Raja","Diana Vreeland","0","fashion","HIGH",0.5
-20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"safe1","Shea Couleé","Elsa Majimbo","1","internet","SAFE",0
-20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"safe1","Shea Couleé","Miss J.","1","reality","SAFE",0
-20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"safe2","Yvie Oddly","Rico Nasty","1","musician","SAFE",0
-20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"safe2","Yvie Oddly","The Boogieman","0","histfict","SAFE",0
-20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"safe3","Jaida Essence Hall","Prince","0","musician","SAFE",0
-20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"safe3","Jaida Essence Hall","The Lady Chablis","0","farout","SAFE",0
-20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"safe4","The Vivienne","Joanna Lumley","1","comedicent","SAFE",0
-20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"safe4","The Vivienne","Catherine Tate","1","comedicent","SAFE",0
-21,"as",8,"US",5,2023-06-02,"Snatch Game of Love","1",8,"win1","Jimbo","Shirley Temple","0","comedicent","WIN",1
-21,"as",8,"US",5,2023-06-02,"Snatch Game of Love","1",8,"high1","Alexis Michelle","Bea Arthur","0","comedicent","HIGH",0.5
-21,"as",8,"US",5,2023-06-02,"Snatch Game of Love","1",8,"high2","Jaymes Mansfield","Jennifer Coolidge","1","comedicent","HIGH",0.5
-21,"as",8,"US",5,2023-06-02,"Snatch Game of Love","1",8,"safe1","LaLa Ri","Sukihana","1","reality","SAFE",0
-21,"as",8,"US",5,2023-06-02,"Snatch Game of Love","1",8,"safe2","Kandy Muse","Renee Graziano","1","reality","SAFE",0
-21,"as",8,"US",5,2023-06-02,"Snatch Game of Love","1",8,"bottom1","Jessica Wild","Iris Chacón","1","comedicent","BOTTOM",-0.5
-21,"as",8,"US",5,2023-06-02,"Snatch Game of Love","1",8,"bottom2","Kahanna Montrese","Coco Montrese","1","farout","BOTTOM",-0.5
-22,"reg",1,"UK",4,2019-10-24,"Snatch Game","0",7,"win1","The Vivienne","Donald Trump","1","pubfig","WIN",1
-22,"reg",1,"UK",4,2019-10-24,"Snatch Game","0",7,"win2","Baga Chipz","Margaret Thatcher","0","pubfig","WIN",1
-22,"reg",1,"UK",4,2019-10-24,"Snatch Game","0",7,"safe1","Cheryl Hole","Gemma Collins","1","reality","SAFE",0
-22,"reg",1,"UK",4,2019-10-24,"Snatch Game","0",7,"safe2","Divina De Campo","Julia Child","0","tv","SAFE",0
-22,"reg",1,"UK",4,2019-10-24,"Snatch Game","0",7,"safe3","Blu Hydrangea","Mary Berry","1","tv","SAFE",0
-22,"reg",1,"UK",4,2019-10-24,"Snatch Game","0",7,"bottom1","Crystal","Rue McClanahan","0","comedicent","BOTTOM",-0.5
-22,"reg",1,"UK",4,2019-10-24,"Snatch Game","0",7,"eliminated1","Sum Ting Wong","Sir David Attenborough","1","tv","ELIM",-1
-23,"reg",2,"UK",6,2021-02-18,"Snatch Game","0",7,"high1","Tayce","Jane Turner","1","comedicent","HIGH",0.5
-23,"reg",2,"UK",6,2021-02-18,"Snatch Game","0",7,"safe1","Ellie Diamond","Matt Lucas","1","comedicent","SAFE",0
-23,"reg",2,"UK",6,2021-02-18,"Snatch Game","0",7,"safe3","Sister Sister","Sally Morgan","1","farout","SAFE",0
-23,"reg",2,"UK",6,2021-02-18,"Snatch Game","0",7,"bottom1","Lawrence Chaney","Miriam Margolyes","1","comedicent","BOTTOM",-0.5
-23,"reg",2,"UK",6,2021-02-18,"Snatch Game","0",7,"eliminated1","Tia Kofi","Mel B","1","musician","ELIM",-1
-24,"reg",3,"UK",6,2021-10-28,"Snatch Game","0",7,"win1","Ella Vaday","Nigella Lawson","1","tv","WIN",1
-24,"reg",3,"UK",6,2021-10-28,"Snatch Game","0",7,"high1","Kitty Scott-Claus","Gemma Collins","1","reality","HIGH",0.5
-24,"reg",3,"UK",6,2021-10-28,"Snatch Game","0",7,"safe1","Vanity Milan","Jocelyn Jee Esien","1","comedicent","SAFE",0
-24,"reg",3,"UK",6,2021-10-28,"Snatch Game","0",7,"safe2","Scarlett Harlett","Macaulay Culkin","1","comedicent","SAFE",0
-24,"reg",3,"UK",6,2021-10-28,"Snatch Game","0",7,"safe3","Krystal Versace","Selina Mosinski","1","internet","SAFE",0
-24,"reg",3,"UK",6,2021-10-28,"Snatch Game","0",7,"eliminated2","River Medway","Amy Childs","1","reality","ELIM",-1
-25,"reg",4,"UK",6,2022-10-27,"Strictly Come Snatch Game","0",7,"win1","Cheddar Gorgeous","Queen Elizabeth I","0","histfict","WIN",1
-25,"reg",4,"UK",6,2022-10-27,"Strictly Come Snatch Game","0",7,"high1","Jonbers Blonde","Saint Patty","0","histfict","HIGH",0.5
-25,"reg",4,"UK",6,2022-10-27,"Strictly Come Snatch Game","0",7,"safe1","Danny Beard","Cilla Black","0","tv","SAFE",0
-25,"reg",4,"UK",6,2022-10-27,"Strictly Come Snatch Game","0",7,"safe2","Pixie Polite","Dame Shirley Bassey","1","musician","SAFE",0
-25,"reg",4,"UK",6,2022-10-27,"Strictly Come Snatch Game","0",7,"safe3","Dakota Schiffer","Pete Burns","0","reality","SAFE",0
-25,"reg",4,"UK",6,2022-10-27,"Strictly Come Snatch Game","0",7,"bottom1","Black Peppa","Lil Nas X","1","musician","BOTTOM",-0.5
-25,"reg",4,"UK",6,2022-10-27,"Strictly Come Snatch Game","0",7,"eliminated1","Le Fil","Marie Kondo","1","tv","ELIM",-1
-26,"reg",5,"UK",6,2023-11-02,"Snatch Game","0",7,"win1","Ginger Johnson","Dame Barbara Cartland","0","writer","WIN",1
-26,"reg",5,"UK",6,2023-11-02,"Snatch Game","0",7,"high1","Tomara Thomas","Robin Williams","0","comedicent","HIGH",0.5
-26,"reg",5,"UK",6,2023-11-02,"Snatch Game","0",7,"safe1","Michael Marouli","Catherine Tate","1","comedicent","SAFE",0
-26,"reg",5,"UK",6,2023-11-02,"Snatch Game","0",7,"safe2","Kate Butch","Kate Bush","1","musician","SAFE",0
-26,"reg",5,"UK",6,2023-11-02,"Snatch Game","0",7,"safe3","Cara Melle","Dionne Warwick","1","musician","SAFE",0
-26,"reg",5,"UK",6,2023-11-02,"Snatch Game","0",7,"bottom1","DeDeLicious","Lady Colin Campbell","1","writer","BOTTOM",-0.5
-26,"reg",5,"UK",6,2023-11-02,"Snatch Game","0",7,"eliminated1","Vicki Vivacious","Fanny Cradock","0","tv","ELIM",-1
-27,"reg",1,"CAN",5,2020-07-30,"Snatch Game","0",8,"win1","Jimbo","Joan Rivers","0","comedicent","WIN",1
-27,"reg",1,"CAN",5,2020-07-30,"Snatch Game","0",8,"high1","Rita Baga","Édith Piaf","0","musician","HIGH",0.5
-27,"reg",1,"CAN",5,2020-07-30,"Snatch Game","0",8,"high2","Lemon","JoJo Siwa","1","internet","HIGH",0.5
-27,"reg",1,"CAN",5,2020-07-30,"Snatch Game","0",8,"safe1","Scarlett BoBo","Liza Minnelli","1","comedicent","SAFE",0
-27,"reg",1,"CAN",5,2020-07-30,"Snatch Game","0",8,"safe2","Ilona Verley","Rebecca More","1","farout","SAFE",0
-27,"reg",1,"CAN",5,2020-07-30,"Snatch Game","0",8,"safe3","BOA","Gypsy Rose Blanchard","1","farout","SAFE",0
-27,"reg",1,"CAN",5,2020-07-30,"Snatch Game","0",8,"bottom1","Priyanka","Miss Cleo","0","tv","BOTTOM",-0.5
-27,"reg",1,"CAN",5,2020-07-30,"Snatch Game","0",8,"eliminated1","Kiara","Mariah Carey","1","musician","ELIM",-1
-28,"reg",2,"CAN",4,2021-11-04,"Snatch Game","0",9,"win1","Synthia Kiss","Rachel Zoe","1","reality","WIN",1
-28,"reg",2,"CAN",4,2021-11-04,"Snatch Game","0",9,"high1","Kimora Amour","Leslie Jones","1","comedicent","HIGH",0.5
-28,"reg",2,"CAN",4,2021-11-04,"Snatch Game","0",9,"high2","Pythia","Grimes","1","musician","HIGH",0.5
-28,"reg",2,"CAN",4,2021-11-04,"Snatch Game","0",9,"safe1","Kendall Gender","Kris Jenner","1","reality","SAFE",0
-28,"reg",2,"CAN",4,2021-11-04,"Snatch Game","0",9,"safe2","Pythia","Grimes","1","musician","SAFE",0
-28,"reg",2,"CAN",4,2021-11-04,"Snatch Game","0",9,"safe3","Gia Metric","Jim Carrey","1","comedicent","SAFE",0
-28,"reg",2,"CAN",4,2021-11-04,"Snatch Game","0",9,"safe5","Icesis Couture","La Veneno","0","pubfig","SAFE",0
-28,"reg",2,"CAN",4,2021-11-04,"Snatch Game","0",9,"bottom1","Eve 6000","Bernie Sanders","1","pubfig","BOTTOM",-0.5
-28,"reg",2,"CAN",4,2021-11-04,"Snatch Game","0",9,"eliminated1","Suki Doll","Yoko Ono","1","farout","ELIM",-1
-29,"reg",3,"CAN",5,2022-08-11,"Snatch Game","0",8,"high2","Irma Gerd","Marilyn Monroe","0","comedicent","HIGH",0.5
-29,"reg",3,"CAN",5,2022-08-11,"Snatch Game","0",8,"safe1","Miss Fiercalicious","Kourtney Kardashian","0","reality","SAFE",0
-29,"reg",3,"CAN",5,2022-08-11,"Snatch Game","0",8,"safe2","Jada Shada Hudson","Saucy Santana","1","musician","SAFE",0
-29,"reg",3,"CAN",5,2022-08-11,"Snatch Game","0",8,"safe3","Bombae","Aziz Ansari","1","comedicent","SAFE",0
-29,"reg",3,"CAN",5,2022-08-11,"Snatch Game","0",8,"bottom1","Kimmy Couture","Ariana Grande","1","musician","BOTTOM",-0.5
-29,"reg",3,"CAN",5,2022-08-11,"Snatch Game","0",8,"eliminated1","Lady Boom Boom","Mado Lamotte","1","farout","ELIM",-1
-30,"reg",4,"CAN",5,2023-12-14,"Snatch Game","0",9,"win1","Melinda Verga","Manny Pacquiao","1","farout","WIN",1
-30,"reg",4,"CAN",5,2023-12-14,"Snatch Game","0",9,"high1","Venus","Joe Exotic","1","reality","HIGH",0.5
-30,"reg",4,"CAN",5,2023-12-14,"Snatch Game","0",9,"high2","Kitten Kaboodle","Jennifer Coolidge","1","comedicent","HIGH",0.5
-30,"reg",4,"CAN",5,2023-12-14,"Snatch Game","0",9,"safe1","Nearah Nuff","Jennifer Coolidge","1","comedicent","SAFE",0
-30,"reg",4,"CAN",5,2023-12-14,"Snatch Game","0",9,"safe2","Denim","Julia Fox","1","noncomedicent","SAFE",0
-30,"reg",4,"CAN",5,2023-12-14,"Snatch Game","0",9,"safe3","Kiki Coe","Elizabeth Taylor","0","noncomedicent","SAFE",0
-30,"reg",4,"CAN",5,2023-12-14,"Snatch Game","0",9,"safe4","Aimee Yonce Shennel","Jesus Christ","0","histfict","SAFE",0
-30,"reg",4,"CAN",5,2023-12-14,"Snatch Game","0",9,"bottom1","Aurora Matrix","Zhao Bing","0","histfict","BOTTOM",-0.5
-30,"reg",4,"CAN",5,2023-12-14,"Snatch Game","0",9,"eliminated1","Luna DuBois","Mary Cosby","1","reality","ELIM",-1
-31,"reg",1,"AUS",2,2021-05-08,"Snatch Game","0",9,"safe1","Karen from Finance","Dolly Parton","1","musician","SAFE",0
-31,"reg",1,"AUS",2,2021-05-08,"Snatch Game","0",9,"safe2","Scarlet Adams","Jennifer Coolidge","1","comedicent","SAFE",0
-31,"reg",1,"AUS",2,2021-05-08,"Snatch Game","0",9,"safe3","Elektra Shock","Catherine O'Hara","1","comedicent","SAFE",0
-31,"reg",1,"AUS",2,2021-05-08,"Snatch Game","0",9,"safe4","Maxi Shield","Magda Szubanski","1","comedicent","SAFE",0
-31,"reg",1,"AUS",2,2021-05-08,"Snatch Game","0",9,"safe5","Etcetera Etcetera","Lindy Chamberlain-Creighton","1","farout","SAFE",0
-31,"reg",1,"AUS",2,2021-05-08,"Snatch Game","0",9,"safe6","Kita Mean","Dr. Seuss","0","writer","SAFE",0
-31,"reg",1,"AUS",2,2021-05-08,"Snatch Game","0",9,"bottom1","Coco Jumbo","Lizzo","1","musician","BOTTOM",-0.5
-31,"reg",1,"AUS",2,2021-05-08,"Snatch Game","0",9,"eliminated1","Art Simone","Bindi Irwin","1","tv","ELIM",-1
-32,"reg",2,"AUS",4,2022-08-20,"Snatch Game","0",7,"high1","Spankie Jackzon","Dame Edna Everage","1","farout","HIGH",0.5
-32,"reg",2,"AUS",4,2022-08-20,"Snatch Game","0",7,"high2","Yuri Guaii","Courtney Love","1","musician","HIGH",0.5
-32,"reg",2,"AUS",4,2022-08-20,"Snatch Game","0",7,"safe1","Kween Kong","NeNe Leakes","1","reality","SAFE",0
-32,"reg",2,"AUS",4,2022-08-20,"Snatch Game","0",7,"safe2","Molly Poppinz","Orville Peck","1","musician","SAFE",0
-32,"reg",2,"AUS",4,2022-08-20,"Snatch Game","0",7,"bottom1","Beverly Kills","Val Garland","1","fashion","BOTTOM",-0.5
-32,"reg",2,"AUS",4,2022-08-20,"Snatch Game","0",7,"eliminated1","Minnie Cooper","Ellen DeGeneres","1","tv","ELIM",-1
-33,"reg",3,"AUS",4,2023-08-18,"Snatch Game","0",7,"win1","Ashley Madison","Jesus Christ","0","histfict","WIN",1
-33,"reg",3,"AUS",4,2023-08-18,"Snatch Game","0",7,"high1","Isis Avis Loren","Donatella Versace","1","fashion","HIGH",0.5
-33,"reg",3,"AUS",4,2023-08-18,"Snatch Game","0",7,"safe1","Gabriella Labucci","Emma Watkins","1","musician","SAFE",0
-33,"reg",3,"AUS",4,2023-08-18,"Snatch Game","0",7,"safe2","Hollywould Star","Naomi Campbell","1","fashion","SAFE",0
-33,"reg",3,"AUS",4,2023-08-18,"Snatch Game","0",7,"safe3","Bumpa Love","Kiri Te Kanawa","1","musician","SAFE",0
-33,"reg",3,"AUS",4,2023-08-18,"Snatch Game","0",7,"bottom1","Flor","Charo","1","comedicent","BOTTOM",-0.5
-33,"reg",3,"AUS",4,2023-08-18,"Snatch Game","0",7,"eliminated1","Rita Menu","Cardi B","1","musician","ELIM",-1
-34,"as",1,"UKvW",4,2022-02-22,"Snatch Game: Family Edition","1",6,"win1","Blu Hydrangea","Mike Myers","1","comedicent","WIN",1
-34,"as",1,"UKvW",4,2022-02-22,"Snatch Game: Family Edition","1",6,"win2","Baga Chipz","Kathy Bates","1","noncomedicent","WIN",1
-34,"as",1,"UKvW",4,2022-02-22,"Snatch Game: Family Edition","1",6,"bottom1","Monique Heart","Billy Porter","1","comedicent","BOTTOM",-0.5
-34,"as",1,"UKvW",4,2022-02-22,"Snatch Game: Family Edition","1",6,"bottom2","Jujubee","Cher","1","musician","BOTTOM",-0.5
-34,"as",1,"UKvW",4,2022-02-22,"Snatch Game: Family Edition","1",6,"bottom3","Janey Jacké","James Charles","1","fashion","BOTTOM",-0.5
-34,"as",1,"UKvW",4,2022-02-22,"Snatch Game: Family Edition","1",6,"eliminated1","Pangina Heals","Mariah Carey","1","musician","ELIM",-1
+0,"reg",2,"US",4,2010-02-22,"The Snatch Game","0",9,"win1","Tatianna","Britney Spears","1","Musician","WIN",1
+0,"reg",2,"US",4,2010-02-22,"The Snatch Game","0",9,"high1","Pandora Boxx","Carol Channing","0","ComedicEnt","HIGH",0.5
+0,"reg",2,"US",4,2010-02-22,"The Snatch Game","0",9,"safe1","Raven","Paris Hilton","1","Reality","SAFE",0
+0,"reg",2,"US",4,2010-02-22,"The Snatch Game","0",9,"safe2","Tyra Sanchez","Beyoncé","1","Musician","SAFE",0
+0,"reg",2,"US",4,2010-02-22,"The Snatch Game","0",9,"safe3","Jessica Wild","RuPaul","1","FarOut","SAFE",0
+0,"reg",2,"US",4,2010-02-22,"The Snatch Game","0",9,"safe3","Jessica Wild","RuPaul","1","Reality","SAFE",0
+0,"reg",2,"US",4,2010-02-22,"The Snatch Game","0",9,"safe4","Sahara Davenport","Whitney Houston","0","Musician","SAFE",0
+0,"reg",2,"US",4,2010-02-22,"The Snatch Game","0",9,"safe5","Jujubee","Kimora Lee","1","Reality","SAFE",0
+0,"reg",2,"US",4,2010-02-22,"The Snatch Game","0",9,"bottom1","Morgan McMichaels","Pink","1","Musician","BOTTOM",-0.5
+0,"reg",2,"US",4,2010-02-22,"The Snatch Game","0",9,"eliminated1","Kylie Sonique Love","Lady Gaga","1","Musician","ELIM",-1
+1,"reg",3,"US",6,2011-02-21,"The Snatch Game","0",9,"high1","Raja","Tyra Banks","1","Fashion","HIGH",0.5
+1,"reg",3,"US",6,2011-02-21,"The Snatch Game","0",9,"high2","Alexis Mateo","Alicia Keys","1","Musician","HIGH",0.5
+1,"reg",3,"US",6,2011-02-21,"The Snatch Game","0",9,"safe1","Manila Luzon","Imelda Marcos","1","PubFig","SAFE",0
+1,"reg",3,"US",6,2011-02-21,"The Snatch Game","0",9,"safe2","Yara Sofia","Amy Winehouse","1","Musician","SAFE",0
+1,"reg",3,"US",6,2011-02-21,"The Snatch Game","0",9,"safe3","Carmen Carrera","Jennifer Lopez","1","Musician","SAFE",0
+1,"reg",3,"US",6,2011-02-21,"The Snatch Game","0",9,"safe4","Shangela","Tina Turner","1","Musician","SAFE",0
+1,"reg",3,"US",6,2011-02-21,"The Snatch Game","0",9,"bottom1","Delta Work","Cher","1","Musician","BOTTOM",-0.5
+1,"reg",3,"US",6,2011-02-21,"The Snatch Game","0",9,"eliminated1","Mariah","Joan Crawford","0","NonComedicEnt","ELIM",-1
+2,"reg",4,"US",5,2012-02-27,"Snatch Game","0",9,"win1","Chad Michaels","Cher","1","Musician","WIN",1
+2,"reg",4,"US",5,2012-02-27,"Snatch Game","0",9,"high1","Sharon Needles","Michelle Visage","1","Reality","HIGH",0.5
+2,"reg",4,"US",5,2012-02-27,"Snatch Game","0",9,"high2","Willam","Jessica Simpson","1","Musician","HIGH",0.5
+2,"reg",4,"US",5,2012-02-27,"Snatch Game","0",9,"safe2","Latrice Royale","Aretha Franklin","1","Musician","SAFE",0
+2,"reg",4,"US",5,2012-02-27,"Snatch Game","0",9,"safe3","DiDa Ritz","Wendy Williams","1","TV","SAFE",0
+2,"reg",4,"US",5,2012-02-27,"Snatch Game","0",9,"safe4","Jiggly Caliente","Snooki","1","Reality","SAFE",0
+2,"reg",4,"US",5,2012-02-27,"Snatch Game","0",9,"bottom1","Milan","Diana Ross","1","Musician","BOTTOM",-0.5
+2,"reg",4,"US",5,2012-02-27,"Snatch Game","0",9,"eliminated1","Kenya Michaels","Beyoncé","1","Musician","ELIM",-1
+3,"reg",5,"US",5,2013-02-25,"Snatch Game","0",9,"win1","Jinkx Monsoon","Little Edie","0","PubFig","WIN",1
+3,"reg",5,"US",5,2013-02-25,"Snatch Game","0",9,"high1","Alaska","Lady Bunny","1","FarOut","HIGH",0.5
+3,"reg",5,"US",5,2013-02-25,"Snatch Game","0",9,"high2","Roxxxy Andrews","Tamar Braxton","1","Reality","HIGH",0.5
+3,"reg",5,"US",5,2013-02-25,"Snatch Game","0",9,"safe1","Coco Montrese","Janet Jackson","1","Musician","SAFE",0
+3,"reg",5,"US",5,2013-02-25,"Snatch Game","0",9,"safe2","Alyssa Edwards","Katy Perry","1","Musician","SAFE",0
+3,"reg",5,"US",5,2013-02-25,"Snatch Game","0",9,"safe3","Ivy Winters","Marilyn Monroe","0","ComedicEnt","SAFE",0
+3,"reg",5,"US",5,2013-02-25,"Snatch Game","0",9,"safe4","Jade Jolie","Taylor Swift","1","Musician","SAFE",0
+3,"reg",5,"US",5,2013-02-25,"Snatch Game","0",9,"bottom1","Detox","Kesha","1","Musician","BOTTOM",-0.5
+3,"reg",5,"US",5,2013-02-25,"Snatch Game","0",9,"eliminated1","Lineysha Sparx","Celia Cruz","0","Musician","ELIM",-1
+4,"reg",6,"US",5,2014-03-24,"Snatch Game","0",10,"win1","BenDeLaCreme","Maggie Smith","1","ComedicEnt","WIN",1
+4,"reg",6,"US",5,2014-03-24,"Snatch Game","0",10,"high1","Bianca Del Rio","Judge Judy","1","TV","HIGH",0.5
+4,"reg",6,"US",5,2014-03-24,"Snatch Game","0",10,"high2","Adore Delano","Anna Nicole Smith","0","Reality","HIGH",0.5
+4,"reg",6,"US",5,2014-03-24,"Snatch Game","0",10,"safe1","Courtney Act","Fran Drescher","1","ComedicEnt","SAFE",0
+4,"reg",6,"US",5,2014-03-24,"Snatch Game","0",10,"safe2","Darienne Lake","Paula Deen","1","TV","SAFE",0
+4,"reg",6,"US",5,2014-03-24,"Snatch Game","0",10,"safe3","Joslyn Fox","Teresa Giudice","1","Reality","SAFE",0
+4,"reg",6,"US",5,2014-03-24,"Snatch Game","0",10,"safe4","Trinity K. Bonet","Nicki Minaj","1","Musician","SAFE",0
+4,"reg",6,"US",5,2014-03-24,"Snatch Game","0",10,"safe5","Milk","Julia Child","0","TV","SAFE",0
+4,"reg",6,"US",5,2014-03-24,"Snatch Game","0",10,"bottom1","Laganja Estranja","Rachel Zoe","1","Reality","BOTTOM",-0.5
+4,"reg",6,"US",5,2014-03-24,"Snatch Game","0",10,"eliminated1","Gia Gunn","Kim Kardashian","1","Reality","ELIM",-1
+5,"reg",7,"US",7,2015-04-13,"Snatch Game","0",8,"win1","Ginger Minj","Adele","1","Musician","WIN",1
+5,"reg",7,"US",7,2015-04-13,"Snatch Game","0",8,"win2","Kennedy Davenport","Little Richard","1","Musician","WIN",1
+5,"reg",7,"US",7,2015-04-13,"Snatch Game","0",8,"high1","Katya","Suze Orman","1","TV","HIGH",0.5
+5,"reg",7,"US",7,2015-04-13,"Snatch Game","0",8,"safe1","Pearl","Big Ang","1","Reality","SAFE",0
+5,"reg",7,"US",7,2015-04-13,"Snatch Game","0",8,"safe2","Violet Chachki","Alyssa Edwards","1","FarOut","SAFE",0
+5,"reg",7,"US",7,2015-04-13,"Snatch Game","0",8,"safe3","Miss Fame","Donatella Versace","1","Fashion","SAFE",0
+5,"reg",7,"US",7,2015-04-13,"Snatch Game","0",8,"bottom1","Jaidynn Diore Fierce","Raven-Symoné","1","ComedicEnt","BOTTOM",-0.5
+5,"reg",7,"US",7,2015-04-13,"Snatch Game","0",8,"eliminated1","Max","Sharon Needles","1","FarOut","ELIM",-1
+6,"reg",8,"US",5,2016-04-04,"Supermodel Snatch Game","0",8,"win1","Bob the Drag Queen","Uzo Aduba","1","ComedicEnt","WIN",1
+6,"reg",8,"US",5,2016-04-04,"Supermodel Snatch Game","0",8,"win1","Bob the Drag Queen","Carol Channing","0","ComedicEnt","WIN",1
+6,"reg",8,"US",5,2016-04-04,"Supermodel Snatch Game","0",8,"high1","Derrick Barry","Britney Spears","1","Musician","HIGH",0.5
+6,"reg",8,"US",5,2016-04-04,"Supermodel Snatch Game","0",8,"high2","Thorgy Thor","Michael Jackson","0","Musician","HIGH",0.5
+6,"reg",8,"US",5,2016-04-04,"Supermodel Snatch Game","0",8,"safe1","Chi Chi DeVayne","Eartha Kitt","0","NonComedicEnt","SAFE",0
+6,"reg",8,"US",5,2016-04-04,"Supermodel Snatch Game","0",8,"safe2","Robbie Turner","Diana Vreeland","0","Fashion","SAFE",0
+6,"reg",8,"US",5,2016-04-04,"Supermodel Snatch Game","0",8,"safe3","Kim Chi","Kimmy Jong-Un","1","PubFig","SAFE",0
+6,"reg",8,"US",5,2016-04-04,"Supermodel Snatch Game","0",8,"bottom1","Naomi Smalls","Tiffany Pollard","1","Reality","BOTTOM",-0.5
+6,"reg",8,"US",5,2016-04-04,"Supermodel Snatch Game","0",8,"eliminated1","Acid Betty","Nancy Grace","1","TV","ELIM",-1
+7,"reg",9,"US",6,2017-04-28,"Snatch Game","0",10,"win1","Alexis Michelle","Liza Minnelli","1","ComedicEnt","WIN",1
+7,"reg",9,"US",6,2017-04-28,"Snatch Game","0",10,"high1","Sasha Velour","Marlene Dietrich","0","ComedicEnt","HIGH",0.5
+7,"reg",9,"US",6,2017-04-28,"Snatch Game","0",10,"safe1","Shea Couleé","Naomi Campbell","1","Fashion","SAFE",0
+7,"reg",9,"US",6,2017-04-28,"Snatch Game","0",10,"safe2","Trinity the Tuck","Amanda Lepore","1","FarOut","SAFE",0
+7,"reg",9,"US",6,2017-04-28,"Snatch Game","0",10,"safe3","Valentina","Ariadna Gutiérrez","1","Fashion","SAFE",0
+7,"reg",9,"US",6,2017-04-28,"Snatch Game","0",10,"safe4","Farrah Moan","Gigi Gorgeous","1","Internet","SAFE",0
+7,"reg",9,"US",6,2017-04-28,"Snatch Game","0",10,"safe5","Aja","Alyssa Edwards","1","FarOut","SAFE",0
+7,"reg",9,"US",6,2017-04-28,"Snatch Game","0",10,"bottom1","Peppermint","NeNe Leakes","1","Reality","BOTTOM",-0.5
+7,"reg",9,"US",6,2017-04-28,"Snatch Game","0",10,"eliminated1","Cynthia Lee Fontaine","Sofia Vergara","1","ComedicEnt","ELIM",-1
+8,"reg",10,"US",7,2018-05-03,"Snatch Game","0",8,"high1","Eureka","Alana “Honey Boo Boo” Thompson","1","Reality","HIGH",0.5
+8,"reg",10,"US",7,2018-05-03,"Snatch Game","0",8,"high2","Monét X Change","Maya Angelou","1","Writer","HIGH",0.5
+8,"reg",10,"US",7,2018-05-03,"Snatch Game","0",8,"safe1","Kameron Michaels","Chyna","0","NonComedicEnt","SAFE",0
+8,"reg",10,"US",7,2018-05-03,"Snatch Game","0",8,"safe2","Asia O’Hara","Beyoncé","1","Musician","SAFE",0
+8,"reg",10,"US",7,2018-05-03,"Snatch Game","0",8,"safe3","Miz Cracker","Dorothy Parker","0","Writer","SAFE",0
+8,"reg",10,"US",7,2018-05-03,"Snatch Game","0",8,"bottom1","The Vixen","Blue Ivy Carter","1","PubFig","BOTTOM",-0.5
+8,"reg",10,"US",7,2018-05-03,"Snatch Game","0",8,"eliminated1","Monique Heart","Maxine Waters","1","PubFig","ELIM",-1
+9,"reg",11,"US",8,2019-04-18,"Snatch Game at Sea","0",8,"win1","Silky Nutmeg Ganache","Ts Madison","1","Reality","WIN",1
+9,"reg",11,"US",8,2019-04-18,"Snatch Game at Sea","0",8,"high1","Nina West","Harvey Fierstein","1","ComedicEnt","HIGH",0.5
+9,"reg",11,"US",8,2019-04-18,"Snatch Game at Sea","0",8,"high1","Nina West","Jo Anne Worley","1","ComedicEnt","HIGH",0.5
+9,"reg",11,"US",8,2019-04-18,"Snatch Game at Sea","0",8,"high2","Shuga Cain","Charo","1","ComedicEnt","HIGH",0.5
+9,"reg",11,"US",8,2019-04-18,"Snatch Game at Sea","0",8,"safe1","Vanessa Vanjie Mateo","Danielle Bregoli","1","Internet","SAFE",0
+9,"reg",11,"US",8,2019-04-18,"Snatch Game at Sea","0",8,"safe2","Plastique Tiara","Lovely Mimi","1","Internet","SAFE",0
+9,"reg",11,"US",8,2019-04-18,"Snatch Game at Sea","0",8,"bottom1","Brooke Lynn Hytes","Celine Dion","1","Musician","BOTTOM",-0.5
+9,"reg",11,"US",8,2019-04-18,"Snatch Game at Sea","0",8,"bottom2","Yvie Oddly","Whoopi Goldberg","1","TV","BOTTOM",-0.5
+10,"reg",12,"US",6,2020-04-03,"Snatch Game","0",10,"win1","Gigi Goode","Maria the Robot","1","FarOut","WIN",1
+10,"reg",12,"US",6,2020-04-03,"Snatch Game","0",10,"high1","Sherry Pie","Katharine Hepburn","0","NonComedicEnt","HIGH",0.5
+10,"reg",12,"US",6,2020-04-03,"Snatch Game","0",10,"high2","Jackie Cox","Lisa Rinna","1","Reality","HIGH",0.5
+10,"reg",12,"US",6,2020-04-03,"Snatch Game","0",10,"safe1","Crystal Methyd","Poppy","1","Internet","SAFE",0
+10,"reg",12,"US",6,2020-04-03,"Snatch Game","0",10,"safe2","Heidi N Closet","Leslie Jones","1","ComedicEnt","SAFE",0
+10,"reg",12,"US",6,2020-04-03,"Snatch Game","0",10,"safe4","Jan","Bernadette Peters","1","ComedicEnt","SAFE",0
+10,"reg",12,"US",6,2020-04-03,"Snatch Game","0",10,"safe5","Jaida Essence Hall","Cardi B","1","Musician","SAFE",0
+10,"reg",12,"US",6,2020-04-03,"Snatch Game","0",10,"bottom1","Brita","Jennifer Holliday","1","NonComedicEnt","BOTTOM",-0.5
+10,"reg",12,"US",6,2020-04-03,"Snatch Game","0",10,"eliminated1","Aiden Zhane","Patricia Quinn","1","ComedicEnt","ELIM",-1
+11,"reg",13,"US",9,2021-03-05,"The Snatch Game","0",9,"win1","Gottmik","Paris Hilton","1","Reality","WIN",1
+11,"reg",13,"US",9,2021-03-05,"The Snatch Game","0",9,"high1","Denali","Jonathan Van Ness","1","Reality","HIGH",0.5
+11,"reg",13,"US",9,2021-03-05,"The Snatch Game","0",9,"high2","Rosé","Mary, Queen of Scots","0","HistFict","HIGH",0.5
+11,"reg",13,"US",9,2021-03-05,"The Snatch Game","0",9,"safe2","Olivia Lux","Tabitha Brown","1","Internet","SAFE",0
+11,"reg",13,"US",9,2021-03-05,"The Snatch Game","0",9,"safe3","Tina Burner","Richard Simmons","1","TV","SAFE",0
+11,"reg",13,"US",9,2021-03-05,"The Snatch Game","0",9,"safe4","Symone","Harriet Tubman","0","HistFict","SAFE",0
+11,"reg",13,"US",9,2021-03-05,"The Snatch Game","0",9,"bottom1","Utica Queen","Bob Ross","0","TV","BOTTOM",-0.5
+11,"reg",13,"US",9,2021-03-05,"The Snatch Game","0",9,"eliminated1","Elliott with 2 Ts","Rue McClanahan","0","ComedicEnt","ELIM",-1
+12,"reg",14,"US",10,2022-03-11,"Snatch Game","0",8,"win1","DeJa Skye","Lil Jon","1","Musician","WIN",1
+12,"reg",14,"US",10,2022-03-11,"Snatch Game","0",8,"bottom2","Bosco","Gwyneth Paltrow","1","NonComedicEnt","BOTTOM",-0.5
+12,"reg",14,"US",10,2022-03-11,"Snatch Game","0",8,"bottom3","Daya Betty","Ozzy Osbourne","1","Musician","BOTTOM",-0.5
+12,"reg",14,"US",10,2022-03-11,"Snatch Game","0",8,"bottom4","Jasmine Kennedie","Betsy DeVos","1","PubFig","BOTTOM",-0.5
+12,"reg",14,"US",10,2022-03-11,"Snatch Game","0",8,"bottom5","Jorgeous","Ilana Glazer","1","ComedicEnt","BOTTOM",-0.5
+12,"reg",14,"US",10,2022-03-11,"Snatch Game","0",8,"bottom6","Lady Camden","William Shakespeare","0","HistFict","BOTTOM",-0.5
+12,"reg",14,"US",10,2022-03-11,"Snatch Game","0",8,"bottom7","Willow Pill","Drew Barrymore","1","NonComedicEnt","BOTTOM",-0.5
+13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"win1","Loosey LaDuca","Joan Rivers","0","ComedicEnt","WIN",1
+13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"high1","Mistress Isabelle Brooks","Rosie O'Donnell","1","TV","HIGH",0.5
+13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"high2","Marcia Marcia Marcia","Tim Gunn","1","Fashion","HIGH",0.5
+13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"safe1","Anetra","Gorgena Ramsay","1","Reality","SAFE",0
+13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"safe2","Luxx Noir London","Amanda Lepore","1","FarOut","SAFE",0
+13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"safe3","Salina EsTitties","The Virgin Mary","0","HistFict","SAFE",0
+13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"safe4","Sasha Colby","Jan Crouch","0","TV","SAFE",0
+13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"safe5","Malaysia Babydoll Foxx","Saucy Santana","1","Musician","SAFE",0
+13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"safe6","Jax","Mona Lisa","0","HistFict","SAFE",0
+13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"safe7","Aura Mayari","Bretman Rock","1","Internet","SAFE",0
+13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"safe8","Robin Fierce","Karen Huger","1","Reality","SAFE",0
+13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"safe9","Amethyst","Patricia ""Tan Mom"" Krentcil","1","FarOut","SAFE",0
+13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"bottom1","Spice","Miley Cyrus","1","Musician","BOTTOM",-0.5
+13,"reg",15,"US",4,2023-01-20,"Supersized Snatch Game","1",14,"eliminated1","Sugar","Trisha Paytas","1","Internet","ELIM",-1
+14,"as",1,"US",2,2012-10-29,"Ru Paul’s Gaff-In","1",10,"win1","Alexis Mateo","Shakira","1","Musician","WIN",1
+14,"as",1,"US",2,2012-10-29,"Ru Paul’s Gaff-In","1",10,"win2","Yara Sofia","Charo","1","ComedicEnt","WIN",1
+14,"as",1,"US",2,2012-10-29,"Ru Paul’s Gaff-In","1",10,"high1","Chad Michaels","Bette Davis","0","NonComedicEnt","HIGH",0.5
+14,"as",1,"US",2,2012-10-29,"Ru Paul’s Gaff-In","1",10,"high2","Shannel","Lucille Ball","0","ComedicEnt","HIGH",0.5
+14,"as",1,"US",2,2012-10-29,"Ru Paul’s Gaff-In","1",10,"safe1","Raven","Bea Arthur","0","ComedicEnt","SAFE",0
+14,"as",1,"US",2,2012-10-29,"Ru Paul’s Gaff-In","1",10,"safe2","Jujubee","Fran Drescher","1","ComedicEnt","SAFE",0
+14,"as",1,"US",2,2012-10-29,"Ru Paul’s Gaff-In","1",10,"bottom1","Latrice Royale","Oprah Winfrey","1","TV","BOTTOM",-0.5
+14,"as",1,"US",2,2012-10-29,"Ru Paul’s Gaff-In","1",10,"bottom2","Manila Luzon","Madonna","1","Musician","BOTTOM",-0.5
+14,"as",1,"US",2,2012-10-29,"Ru Paul’s Gaff-In","1",10,"eliminated1","Nina Flowers","La Lupe","0","Musician","ELIM",-1
+14,"as",1,"US",2,2012-10-29,"Ru Paul’s Gaff-In","1",10,"eliminated2","Tammie Brown","Tammy Faye","0","TV","ELIM",-1
+15,"as",2,"US",2,2016-09-01,"All Stars Snatch Game","0",8,"win1","Alaska","Mae West","0","ComedicEnt","WIN",1
+15,"as",2,"US",2,2016-09-01,"All Stars Snatch Game","0",8,"win2","Katya","Björk","1","FarOut","WIN",1
+15,"as",2,"US",2,2016-09-01,"All Stars Snatch Game","0",8,"safe1","Alyssa Edwards","Joan Crawford","0","NonComedicEnt","SAFE",0
+15,"as",2,"US",2,2016-09-01,"All Stars Snatch Game","0",8,"safe2","Ginger Minj","Tammy Faye","0","TV","SAFE",0
+15,"as",2,"US",2,2016-09-01,"All Stars Snatch Game","0",8,"bottom1","Detox","Nancy Grace","1","TV","BOTTOM",-0.5
+15,"as",2,"US",2,2016-09-01,"All Stars Snatch Game","0",8,"bottom2","Roxxxy Andrews","Alaska","1","FarOut","BOTTOM",-0.5
+15,"as",2,"US",2,2016-09-01,"All Stars Snatch Game","0",8,"eliminated1","Tatianna","Ariana Grande","1","Musician","ELIM",-1
+16,"as",3,"US",4,2018-02-15,"All Stars Snatch Program","0",7,"win1","Shangela","Jenifer Lewis","1","ComedicEnt","WIN",1
+16,"as",3,"US",4,2018-02-15,"All Stars Snatch Program","0",7,"win2","BenDeLaCreme","Paul Lynde","0","ComedicEnt","WIN",1
+16,"as",3,"US",4,2018-02-15,"All Stars Snatch Program","0",7,"high1","Aja","Crystal LaBeija","0","FarOut","HIGH",0.5
+16,"as",3,"US",4,2018-02-15,"All Stars Snatch Program","0",7,"safe1","BeBe Zahara Benet","Grace Jones","1","Musician","SAFE",0
+16,"as",3,"US",4,2018-02-15,"All Stars Snatch Program","0",7,"safe1","BeBe Zahara Benet","Grace Jones","1","Fashion","SAFE",0
+16,"as",3,"US",4,2018-02-15,"All Stars Snatch Program","0",7,"bottom1","Trixie Mattel","RuPaul","1","FarOut","BOTTOM",-0.5
+16,"as",3,"US",4,2018-02-15,"All Stars Snatch Program","0",7,"bottom1","Trixie Mattel","RuPaul","1","Reality","BOTTOM",-0.5
+16,"as",3,"US",4,2018-02-15,"All Stars Snatch Program","0",7,"bottom2","Kennedy Davenport","Phaedra Parks","1","Reality","BOTTOM",-0.5
+16,"as",3,"US",4,2018-02-15,"All Stars Snatch Program","0",7,"eliminated1","Chi Chi DeVayne","Maya Angelou","1","Writer","ELIM",-1
+17,"as",4,"US",3,2018-12-28,"Snatch Game of Love","1",8,"win2","Trinity the Tuck","Caitlyn Jenner","1","Reality","WIN",1
+17,"as",4,"US",3,2018-12-28,"Snatch Game of Love","1",8,"high1","Naomi Smalls","Wendy Williams","1","TV","HIGH",0.5
+17,"as",4,"US",3,2018-12-28,"Snatch Game of Love","1",8,"safe1","Monique Heart","Tiffany Haddish","1","ComedicEnt","SAFE",0
+17,"as",4,"US",3,2018-12-28,"Snatch Game of Love","1",8,"safe2","Monét X Change","Whitney Houston","0","Musician","SAFE",0
+17,"as",4,"US",3,2018-12-28,"Snatch Game of Love","1",8,"safe3","Latrice Royale","Della Reese","0","NonComedicEnt","SAFE",0
+17,"as",4,"US",3,2018-12-28,"Snatch Game of Love","1",8,"bottom1","Valentina","Eartha Kitt","0","NonComedicEnt","BOTTOM",-0.5
+17,"as",4,"US",3,2018-12-28,"Snatch Game of Love","1",8,"eliminated1","Gia Gunn","Jenny Bui","1","Internet","ELIM",-1
+18,"as",5,"US",5,2020-07-03,"Snatch Game of Love","1",6,"win1","Shea Couleé","Flavor Flav","1","Reality","WIN",1
+18,"as",5,"US",5,2020-07-03,"Snatch Game of Love","1",6,"bottom1","Jujubee","Eartha Kitt","0","NonComedicEnt","BOTTOM",-0.5
+18,"as",5,"US",5,2020-07-03,"Snatch Game of Love","1",6,"bottom2","Miz Cracker","Lady Gaga","1","Musician","BOTTOM",-0.5
+18,"as",5,"US",5,2020-07-03,"Snatch Game of Love","1",6,"bottom3","Blair St. Clair","Ellen DeGeneres","1","TV","BOTTOM",-0.5
+18,"as",5,"US",5,2020-07-03,"Snatch Game of Love","1",6,"bottom4","Alexis Mateo","Walter Mercado","0","TV","BOTTOM",-0.5
+18,"as",5,"US",5,2020-07-03,"Snatch Game of Love","1",6,"eliminated1","India Ferrah","Jeffree Star","1","Fashion","ELIM",-1
+19,"as",6,"US",8,2021-08-05,"Snatch Game of Love","1",6,"win1","Ginger Minj","Phyllis Diller","0","ComedicEnt","WIN",1
+19,"as",6,"US",8,2021-08-05,"Snatch Game of Love","1",6,"high1","Kylie Sonique Love","Dolly Parton","1","Musician","HIGH",0.5
+19,"as",6,"US",8,2021-08-05,"Snatch Game of Love","1",6,"high2","Eureka","Divine","0","FarOut","HIGH",0.5
+19,"as",6,"US",8,2021-08-05,"Snatch Game of Love","1",6,"bottom1","Trinity K. Bonet","Whitney Houston","0","Musician","BOTTOM",-0.5
+19,"as",6,"US",8,2021-08-05,"Snatch Game of Love","1",6,"eliminated1","Pandora Boxx","Kim Cattrall","1","ComedicEnt","ELIM",-1
+20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"win1","Jinkx Monsoon","Natasha Lyonne","1","ComedicEnt","WIN",1
+20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"win1","Jinkx Monsoon","Judy Garland","0","ComedicEnt","WIN",1
+20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"win2","Trinity the Tuck","Satan","0","HistFict","WIN",1
+20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"win2","Trinity the Tuck","Leslie Jordan","1","ComedicEnt","WIN",1
+20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"high1","Monét X Change","Mike Tyson","1","FarOut","HIGH",0.5
+20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"high1","Monét X Change","Martin Lawrence","1","ComedicEnt","HIGH",0.5
+20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"high2","Raja","Madame","0","ComedicEnt","HIGH",0.5
+20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"high2","Raja","Diana Vreeland","0","Fashion","HIGH",0.5
+20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"safe1","Shea Couleé","Elsa Majimbo","1","Internet","SAFE",0
+20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"safe1","Shea Couleé","Miss J.","1","Reality","SAFE",0
+20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"safe2","Yvie Oddly","Rico Nasty","1","Musician","SAFE",0
+20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"safe2","Yvie Oddly","The Boogieman","0","HistFict","SAFE",0
+20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"safe3","Jaida Essence Hall","Prince","0","Musician","SAFE",0
+20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"safe3","Jaida Essence Hall","The Lady Chablis","0","FarOut","SAFE",0
+20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"safe4","The Vivienne","Joanna Lumley","1","ComedicEnt","SAFE",0
+20,"as",7,"US",2,2022-05-20,"Snatch Game","1",8,"safe4","The Vivienne","Catherine Tate","1","ComedicEnt","SAFE",0
+21,"as",8,"US",5,2023-06-02,"Snatch Game of Love","1",8,"win1","Jimbo","Shirley Temple","0","ComedicEnt","WIN",1
+21,"as",8,"US",5,2023-06-02,"Snatch Game of Love","1",8,"high1","Alexis Michelle","Bea Arthur","0","ComedicEnt","HIGH",0.5
+21,"as",8,"US",5,2023-06-02,"Snatch Game of Love","1",8,"high2","Jaymes Mansfield","Jennifer Coolidge","1","ComedicEnt","HIGH",0.5
+21,"as",8,"US",5,2023-06-02,"Snatch Game of Love","1",8,"safe1","LaLa Ri","Sukihana","1","Reality","SAFE",0
+21,"as",8,"US",5,2023-06-02,"Snatch Game of Love","1",8,"safe2","Kandy Muse","Renee Graziano","1","Reality","SAFE",0
+21,"as",8,"US",5,2023-06-02,"Snatch Game of Love","1",8,"bottom1","Jessica Wild","Iris Chacón","1","ComedicEnt","BOTTOM",-0.5
+21,"as",8,"US",5,2023-06-02,"Snatch Game of Love","1",8,"bottom2","Kahanna Montrese","Coco Montrese","1","FarOut","BOTTOM",-0.5
+22,"reg",1,"UK",4,2019-10-24,"Snatch Game","0",7,"win1","The Vivienne","Donald Trump","1","PubFig","WIN",1
+22,"reg",1,"UK",4,2019-10-24,"Snatch Game","0",7,"win2","Baga Chipz","Margaret Thatcher","0","PubFig","WIN",1
+22,"reg",1,"UK",4,2019-10-24,"Snatch Game","0",7,"safe1","Cheryl Hole","Gemma Collins","1","Reality","SAFE",0
+22,"reg",1,"UK",4,2019-10-24,"Snatch Game","0",7,"safe2","Divina De Campo","Julia Child","0","TV","SAFE",0
+22,"reg",1,"UK",4,2019-10-24,"Snatch Game","0",7,"safe3","Blu Hydrangea","Mary Berry","1","TV","SAFE",0
+22,"reg",1,"UK",4,2019-10-24,"Snatch Game","0",7,"bottom1","Crystal","Rue McClanahan","0","ComedicEnt","BOTTOM",-0.5
+22,"reg",1,"UK",4,2019-10-24,"Snatch Game","0",7,"eliminated1","Sum Ting Wong","Sir David Attenborough","1","TV","ELIM",-1
+23,"reg",2,"UK",6,2021-02-18,"Snatch Game","0",7,"high1","Tayce","Jane Turner","1","ComedicEnt","HIGH",0.5
+23,"reg",2,"UK",6,2021-02-18,"Snatch Game","0",7,"safe1","Ellie Diamond","Matt Lucas","1","ComedicEnt","SAFE",0
+23,"reg",2,"UK",6,2021-02-18,"Snatch Game","0",7,"safe3","Sister Sister","Sally Morgan","1","FarOut","SAFE",0
+23,"reg",2,"UK",6,2021-02-18,"Snatch Game","0",7,"bottom1","Lawrence Chaney","Miriam Margolyes","1","ComedicEnt","BOTTOM",-0.5
+23,"reg",2,"UK",6,2021-02-18,"Snatch Game","0",7,"eliminated1","Tia Kofi","Mel B","1","Musician","ELIM",-1
+24,"reg",3,"UK",6,2021-10-28,"Snatch Game","0",7,"win1","Ella Vaday","Nigella Lawson","1","TV","WIN",1
+24,"reg",3,"UK",6,2021-10-28,"Snatch Game","0",7,"high1","Kitty Scott-Claus","Gemma Collins","1","Reality","HIGH",0.5
+24,"reg",3,"UK",6,2021-10-28,"Snatch Game","0",7,"safe1","Vanity Milan","Jocelyn Jee Esien","1","ComedicEnt","SAFE",0
+24,"reg",3,"UK",6,2021-10-28,"Snatch Game","0",7,"safe2","Scarlett Harlett","Macaulay Culkin","1","ComedicEnt","SAFE",0
+24,"reg",3,"UK",6,2021-10-28,"Snatch Game","0",7,"safe3","Krystal Versace","Selina Mosinski","1","Internet","SAFE",0
+24,"reg",3,"UK",6,2021-10-28,"Snatch Game","0",7,"eliminated2","River Medway","Amy Childs","1","Reality","ELIM",-1
+25,"reg",4,"UK",6,2022-10-27,"Strictly Come Snatch Game","0",7,"win1","Cheddar Gorgeous","Queen Elizabeth I","0","HistFict","WIN",1
+25,"reg",4,"UK",6,2022-10-27,"Strictly Come Snatch Game","0",7,"high1","Jonbers Blonde","Saint Patty","0","HistFict","HIGH",0.5
+25,"reg",4,"UK",6,2022-10-27,"Strictly Come Snatch Game","0",7,"safe1","Danny Beard","Cilla Black","0","TV","SAFE",0
+25,"reg",4,"UK",6,2022-10-27,"Strictly Come Snatch Game","0",7,"safe2","Pixie Polite","Dame Shirley Bassey","1","Musician","SAFE",0
+25,"reg",4,"UK",6,2022-10-27,"Strictly Come Snatch Game","0",7,"safe3","Dakota Schiffer","Pete Burns","0","Reality","SAFE",0
+25,"reg",4,"UK",6,2022-10-27,"Strictly Come Snatch Game","0",7,"bottom1","Black Peppa","Lil Nas X","1","Musician","BOTTOM",-0.5
+25,"reg",4,"UK",6,2022-10-27,"Strictly Come Snatch Game","0",7,"eliminated1","Le Fil","Marie Kondo","1","TV","ELIM",-1
+26,"reg",5,"UK",6,2023-11-02,"Snatch Game","0",7,"win1","Ginger Johnson","Dame Barbara Cartland","0","Writer","WIN",1
+26,"reg",5,"UK",6,2023-11-02,"Snatch Game","0",7,"high1","Tomara Thomas","Robin Williams","0","ComedicEnt","HIGH",0.5
+26,"reg",5,"UK",6,2023-11-02,"Snatch Game","0",7,"safe1","Michael Marouli","Catherine Tate","1","ComedicEnt","SAFE",0
+26,"reg",5,"UK",6,2023-11-02,"Snatch Game","0",7,"safe2","Kate Butch","Kate Bush","1","Musician","SAFE",0
+26,"reg",5,"UK",6,2023-11-02,"Snatch Game","0",7,"safe3","Cara Melle","Dionne Warwick","1","Musician","SAFE",0
+26,"reg",5,"UK",6,2023-11-02,"Snatch Game","0",7,"bottom1","DeDeLicious","Lady Colin Campbell","1","Writer","BOTTOM",-0.5
+26,"reg",5,"UK",6,2023-11-02,"Snatch Game","0",7,"eliminated1","Vicki Vivacious","Fanny Cradock","0","TV","ELIM",-1
+27,"reg",1,"CAN",5,2020-07-30,"Snatch Game","0",8,"win1","Jimbo","Joan Rivers","0","ComedicEnt","WIN",1
+27,"reg",1,"CAN",5,2020-07-30,"Snatch Game","0",8,"high1","Rita Baga","Édith Piaf","0","Musician","HIGH",0.5
+27,"reg",1,"CAN",5,2020-07-30,"Snatch Game","0",8,"high2","Lemon","JoJo Siwa","1","Internet","HIGH",0.5
+27,"reg",1,"CAN",5,2020-07-30,"Snatch Game","0",8,"safe1","Scarlett BoBo","Liza Minnelli","1","ComedicEnt","SAFE",0
+27,"reg",1,"CAN",5,2020-07-30,"Snatch Game","0",8,"safe2","Ilona Verley","Rebecca More","1","FarOut","SAFE",0
+27,"reg",1,"CAN",5,2020-07-30,"Snatch Game","0",8,"safe3","BOA","Gypsy Rose Blanchard","1","FarOut","SAFE",0
+27,"reg",1,"CAN",5,2020-07-30,"Snatch Game","0",8,"bottom1","Priyanka","Miss Cleo","0","TV","BOTTOM",-0.5
+27,"reg",1,"CAN",5,2020-07-30,"Snatch Game","0",8,"eliminated1","Kiara","Mariah Carey","1","Musician","ELIM",-1
+28,"reg",2,"CAN",4,2021-11-04,"Snatch Game","0",9,"win1","Synthia Kiss","Rachel Zoe","1","Reality","WIN",1
+28,"reg",2,"CAN",4,2021-11-04,"Snatch Game","0",9,"high1","Kimora Amour","Leslie Jones","1","ComedicEnt","HIGH",0.5
+28,"reg",2,"CAN",4,2021-11-04,"Snatch Game","0",9,"high2","Pythia","Grimes","1","Musician","HIGH",0.5
+28,"reg",2,"CAN",4,2021-11-04,"Snatch Game","0",9,"safe1","Kendall Gender","Kris Jenner","1","Reality","SAFE",0
+28,"reg",2,"CAN",4,2021-11-04,"Snatch Game","0",9,"safe2","Pythia","Grimes","1","Musician","SAFE",0
+28,"reg",2,"CAN",4,2021-11-04,"Snatch Game","0",9,"safe3","Gia Metric","Jim Carrey","1","ComedicEnt","SAFE",0
+28,"reg",2,"CAN",4,2021-11-04,"Snatch Game","0",9,"safe5","Icesis Couture","La Veneno","0","PubFig","SAFE",0
+28,"reg",2,"CAN",4,2021-11-04,"Snatch Game","0",9,"bottom1","Eve 6000","Bernie Sanders","1","PubFig","BOTTOM",-0.5
+28,"reg",2,"CAN",4,2021-11-04,"Snatch Game","0",9,"eliminated1","Suki Doll","Yoko Ono","1","FarOut","ELIM",-1
+29,"reg",3,"CAN",5,2022-08-11,"Snatch Game","0",8,"high2","Irma Gerd","Marilyn Monroe","0","ComedicEnt","HIGH",0.5
+29,"reg",3,"CAN",5,2022-08-11,"Snatch Game","0",8,"safe1","Miss Fiercalicious","Kourtney Kardashian","0","Reality","SAFE",0
+29,"reg",3,"CAN",5,2022-08-11,"Snatch Game","0",8,"safe2","Jada Shada Hudson","Saucy Santana","1","Musician","SAFE",0
+29,"reg",3,"CAN",5,2022-08-11,"Snatch Game","0",8,"safe3","Bombae","Aziz Ansari","1","ComedicEnt","SAFE",0
+29,"reg",3,"CAN",5,2022-08-11,"Snatch Game","0",8,"bottom1","Kimmy Couture","Ariana Grande","1","Musician","BOTTOM",-0.5
+29,"reg",3,"CAN",5,2022-08-11,"Snatch Game","0",8,"eliminated1","Lady Boom Boom","Mado Lamotte","1","FarOut","ELIM",-1
+30,"reg",4,"CAN",5,2023-12-14,"Snatch Game","0",9,"win1","Melinda Verga","Manny Pacquiao","1","FarOut","WIN",1
+30,"reg",4,"CAN",5,2023-12-14,"Snatch Game","0",9,"high1","Venus","Joe Exotic","1","Reality","HIGH",0.5
+30,"reg",4,"CAN",5,2023-12-14,"Snatch Game","0",9,"high2","Kitten Kaboodle","Jennifer Coolidge","1","ComedicEnt","HIGH",0.5
+30,"reg",4,"CAN",5,2023-12-14,"Snatch Game","0",9,"safe1","Nearah Nuff","Jennifer Coolidge","1","ComedicEnt","SAFE",0
+30,"reg",4,"CAN",5,2023-12-14,"Snatch Game","0",9,"safe2","Denim","Julia Fox","1","NonComedicEnt","SAFE",0
+30,"reg",4,"CAN",5,2023-12-14,"Snatch Game","0",9,"safe3","Kiki Coe","Elizabeth Taylor","0","NonComedicEnt","SAFE",0
+30,"reg",4,"CAN",5,2023-12-14,"Snatch Game","0",9,"safe4","Aimee Yonce Shennel","Jesus Christ","0","HistFict","SAFE",0
+30,"reg",4,"CAN",5,2023-12-14,"Snatch Game","0",9,"bottom1","Aurora Matrix","Zhao Bing","0","HistFict","BOTTOM",-0.5
+30,"reg",4,"CAN",5,2023-12-14,"Snatch Game","0",9,"eliminated1","Luna DuBois","Mary Cosby","1","Reality","ELIM",-1
+31,"reg",1,"AUS",2,2021-05-08,"Snatch Game","0",9,"safe1","Karen from Finance","Dolly Parton","1","Musician","SAFE",0
+31,"reg",1,"AUS",2,2021-05-08,"Snatch Game","0",9,"safe2","Scarlet Adams","Jennifer Coolidge","1","ComedicEnt","SAFE",0
+31,"reg",1,"AUS",2,2021-05-08,"Snatch Game","0",9,"safe3","Elektra Shock","Catherine O'Hara","1","ComedicEnt","SAFE",0
+31,"reg",1,"AUS",2,2021-05-08,"Snatch Game","0",9,"safe4","Maxi Shield","Magda Szubanski","1","ComedicEnt","SAFE",0
+31,"reg",1,"AUS",2,2021-05-08,"Snatch Game","0",9,"safe5","Etcetera Etcetera","Lindy Chamberlain-Creighton","1","FarOut","SAFE",0
+31,"reg",1,"AUS",2,2021-05-08,"Snatch Game","0",9,"safe6","Kita Mean","Dr. Seuss","0","Writer","SAFE",0
+31,"reg",1,"AUS",2,2021-05-08,"Snatch Game","0",9,"bottom1","Coco Jumbo","Lizzo","1","Musician","BOTTOM",-0.5
+31,"reg",1,"AUS",2,2021-05-08,"Snatch Game","0",9,"eliminated1","Art Simone","Bindi Irwin","1","TV","ELIM",-1
+32,"reg",2,"AUS",4,2022-08-20,"Snatch Game","0",7,"high1","Spankie Jackzon","Dame Edna Everage","1","FarOut","HIGH",0.5
+32,"reg",2,"AUS",4,2022-08-20,"Snatch Game","0",7,"high2","Yuri Guaii","Courtney Love","1","Musician","HIGH",0.5
+32,"reg",2,"AUS",4,2022-08-20,"Snatch Game","0",7,"safe1","Kween Kong","NeNe Leakes","1","Reality","SAFE",0
+32,"reg",2,"AUS",4,2022-08-20,"Snatch Game","0",7,"safe2","Molly Poppinz","Orville Peck","1","Musician","SAFE",0
+32,"reg",2,"AUS",4,2022-08-20,"Snatch Game","0",7,"bottom1","Beverly Kills","Val Garland","1","Fashion","BOTTOM",-0.5
+32,"reg",2,"AUS",4,2022-08-20,"Snatch Game","0",7,"eliminated1","Minnie Cooper","Ellen DeGeneres","1","TV","ELIM",-1
+33,"reg",3,"AUS",4,2023-08-18,"Snatch Game","0",7,"win1","Ashley Madison","Jesus Christ","0","HistFict","WIN",1
+33,"reg",3,"AUS",4,2023-08-18,"Snatch Game","0",7,"high1","Isis Avis Loren","Donatella Versace","1","Fashion","HIGH",0.5
+33,"reg",3,"AUS",4,2023-08-18,"Snatch Game","0",7,"safe1","Gabriella Labucci","Emma Watkins","1","Musician","SAFE",0
+33,"reg",3,"AUS",4,2023-08-18,"Snatch Game","0",7,"safe2","Hollywould Star","Naomi Campbell","1","Fashion","SAFE",0
+33,"reg",3,"AUS",4,2023-08-18,"Snatch Game","0",7,"safe3","Bumpa Love","Kiri Te Kanawa","1","Musician","SAFE",0
+33,"reg",3,"AUS",4,2023-08-18,"Snatch Game","0",7,"bottom1","Flor","Charo","1","ComedicEnt","BOTTOM",-0.5
+33,"reg",3,"AUS",4,2023-08-18,"Snatch Game","0",7,"eliminated1","Rita Menu","Cardi B","1","Musician","ELIM",-1
+34,"as",1,"UKvW",4,2022-02-22,"Snatch Game: Family Edition","1",6,"win1","Blu Hydrangea","Mike Myers","1","ComedicEnt","WIN",1
+34,"as",1,"UKvW",4,2022-02-22,"Snatch Game: Family Edition","1",6,"win2","Baga Chipz","Kathy Bates","1","NonComedicEnt","WIN",1
+34,"as",1,"UKvW",4,2022-02-22,"Snatch Game: Family Edition","1",6,"bottom1","Monique Heart","Billy Porter","1","ComedicEnt","BOTTOM",-0.5
+34,"as",1,"UKvW",4,2022-02-22,"Snatch Game: Family Edition","1",6,"bottom2","Jujubee","Cher","1","Musician","BOTTOM",-0.5
+34,"as",1,"UKvW",4,2022-02-22,"Snatch Game: Family Edition","1",6,"bottom3","Janey Jacké","James Charles","1","Fashion","BOTTOM",-0.5
+34,"as",1,"UKvW",4,2022-02-22,"Snatch Game: Family Edition","1",6,"eliminated1","Pangina Heals","Mariah Carey","1","Musician","ELIM",-1
