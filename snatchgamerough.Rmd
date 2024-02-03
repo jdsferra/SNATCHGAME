@@ -247,6 +247,7 @@ bigjoin2 %>% filter(genres == 'entertainer')
 library(rstatix)
 genrecheck2 <- bigjoin2 %>% distinct(uniqueid, character, tsb, score, genres)
 genrecheck2
+genrecheck2 %>% filter(genres == 'writer')
 genrecheck2$score
 genrecheck2 %>% group_by(genres) %>% get_summary_stats(score, type = "mean_sd")
 genreanova <- genrecheck2 %>% anova_test(score ~ genres)
@@ -262,13 +263,21 @@ genreanova #p-value here is .027, there are statistically-significant difference
 #trimmedgc$score <- as.numeric(trimmedgc$score)
 #?pairwise.t.test
 
-pwc <- pairwise.t.test(genrecheck2$score, genrecheck2$genres, p.adj= 'none')
+pw <- pairwise.t.test(genrecheck2$score, genrecheck2$genres, p.adj= 'none')
 pwc
-?t.test
 
+mytest <- data.table(pwc[['p.value']], keep.rownames = T) %>% rename(X = rn) %>% mutate_if(is.numeric, ~round(., 4))
+mytest
+
+
+
+
+pvalues$comedicent = as.numeric(pvalues$comedicent)
+pvalues$tv = as.numeric(pvalues$tv)
+pvalues
   
 class(trimmedgc$score)
-#wilcox.test(trimmedgc$score,trimmedgc$genres, p.adj= 'bonferroni')
+#wilcox.test(trimmedgc$score,trimmedgc$genres, p.adj= 'bonferroni') 
 ```
 
 ```{r DEAD VS ALIVE- plots and t-testing}
@@ -276,8 +285,8 @@ class(trimmedgc$score)
 bigjoin %>% distinct(uniqueid, character, tsb, alive) %>% ggplot(aes(x = tsb)) + geom_bar() + facet_wrap(~alive)
 
 
-deadalivecheck <- bigjoin %>% distinct(uniqueid, character, score, alive)
-doa <- ggplot(data = deadalivecheck, aes(x=score, group=alive, fill = alive)) + geom_density(adjust = .5, alpha = .5)
+deadalivecheck <- bigjoin2 %>% distinct(uniqueid, character, score, alive)
+doa <- ggplot(data = deadalivecheck, aes(x=score, group=alive, fill = alive)) + geom_bar(position = 'dodge')
 doa
 
 #T-TESTING
@@ -289,10 +298,55 @@ allalive <- deadalivecheck %>% filter(alive == 1)
 allalive
 alldead <- deadalivecheck %>% filter(alive == 0)
 alldead
-t.test(alldead$score, allalive$score) #pval is .02- dead character avg is significantly different from alive character avg
+class(alldead$score)
+class(allalive$score)
+mydoa <- t.test(alldead$score, allalive$score) #pval is .02- dead character avg is significantly different from alive character avg
+mydoa
+round(mydoa[['p.value']], 4)
+
 t.test(allalive$score, deadalivecheck$score) #pval is .3822, alive characters don't differ significantly from the whole group
 t.test(alldead$score, deadalivecheck$score) #pval is .09151, dead characters don't differ significantly from whole group
 ```
+```{r}
+
+deadalivecheck <- bigjoin2 %>% distinct(uniqueid, character, tsb, score, alive)
+
+ggplot(data = deadalivecheck, aes(x=tsb, group=alive, fill = alive)) + geom_bar(position = 'dodge')
+
+deadalivecheck %>% ggplot(aes(x = tsb, group=alive, fill = alive)) + geom_bar(position = 'dodge') +
+  scale_y_continuous(breaks = pretty_breaks()) + scale_fill_manual(values = c("#8344AD", "#27AE60")) +
+  scale_fill_discrete(name = "", labels=c('dead', 'alive'))
+#---
+deadalivecheck %>% group_by(alive) %>% mutate(weight = 1/n()) %>%
+         ggplot(aes(x = tsb, fill = alive)) + geom_bar(aes(weight = weight), stat = 'count', position = 'dodge') + 
+    labs(title = 'Percent Placement by Genre', x = 'Placement', y = 'Percentage')
+
+
+deadalivecheck %>% group_by(alive) %>% mutate(weight = 1/n()) %>%
+  ggplot(aes(x = tsb, fill = alive)) + geom_bar(aes(weight = weight), stat = 'count', position = 'dodge') +
+  scale_fill_manual(values = c("#8344AD", "#27AE60")) +
+  labs(title = 'Dead Characters Tend to Perform Better', x = 'Placement', y = 'Percentage')
+
+```
+```{r}
+deadalivecheck <- bigjoin2 %>% distinct(uniqueid, character, tsb, score, alive)
+
+deadalivecheck %>% group_by(alive) %>% mutate(avgscore = round(mean(score), 3)) %>%
+    ungroup() %>% mutate(alive_update = paste0("Mean Score: ", avgscore)) %>%
+    ggplot(aes(x = tsb, fill = alive)) + scale_fill_manual(values = c("#8344AD", "#27AE60"), name = "", labels=c('dead', 'alive')) + geom_bar()+ scale_y_continuous(breaks= pretty_breaks()) + facet_wrap(~alive_update) + 
+    labs(title = "Dead Characters' Advantage is Statistically Significant", x = 'Placement', y = 'Count')
+
+deadalivecheck %>% group_by(alive) %>% mutate(weight = 1/n()) %>%
+  ggplot(aes(x = tsb, fill = alive)) + geom_bar(aes(weight = weight), stat = 'count', position = 'dodge') +
+  scale_fill_manual(values = c("#8344AD", "#27AE60"), name = "", labels = c('dead', 'alive')) +
+  labs(title = 'Dead Characters Tend to Perform Better', x = 'Placement', y = 'Percentage')
+
+```
+
+```{r}
+
+```
+
 ```{r genres, t-testing}
 bigjoin %>% group_by(genres) %>% summarise(avgscore = mean(score)) %>% arrange(desc(avgscore))
 genregroup <- bigjoin %>% group_by(genres)
