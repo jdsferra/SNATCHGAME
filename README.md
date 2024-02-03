@@ -1,0 +1,5 @@
+# Who Should I Play on the Snatch Game?
+## Joe Sferra
+This app is targeted towards fans of RuPaul's Drag Race who want to examine Snatch Game results and confirm or deny their theories about who wins and who loses. I also envisioned a contestant on the show asking “Who Should I Play on the Snatch Game?” And pulling up this app to help them decide. Another angle I could see this app being useful for is from the perspective of a tv show producer. As this show moves into its 16th season in the US alone, producers will need to continue to find twists and gags to keep people engaged and wanting to watch new seasons. Producers could examine what characters tend to win as a way to set up twists and surprises.
+## What Happens in this Analysis?
+The dataset consists of all snatch game episodes from all English-language seasons, including international and all-stars formats. The characters are grouped into genres for which they are the most well-known. This data is then plotted and examined in several ways. There is a more robust explanation of the categories in the body of the app.
