@@ -15,7 +15,7 @@ dashboardSidebar( sidebarUserPanel("Joe Sferra: NYCDSA",
 #Dashboard Body              
 dashboardBody(
     tabItems(
-            #Welcome
+#Welcome
         tabItem(tabName = 'intro', h1('A Deep Dive Into Snatch Game Results', style='text-align:center'),
                                    h5("This app compares how different kinds of characters perform in the 'Snatch Game' episodes\
               of RuPaul's Drag Race, including all worldwide English-language seasons and All-Stars formats."),
@@ -53,7 +53,7 @@ dashboardBody(
                                   h6("Image by rawpixel.com on Freepik")
                               ),
                   
-            #Compare Specific
+#Compare Specific
          tabItem(tabName = 'spec', h2('Compare Specific Genres'),
                 sidebarLayout(
                   sidebarPanel(
@@ -71,6 +71,8 @@ dashboardBody(
                 )
               )
             ),
+
+#Compare General
         tabItem(tabName = 'gen', h2('Compare General Genres'),
                 sidebarLayout(
                   sidebarPanel(
@@ -88,6 +90,8 @@ dashboardBody(
                 )
               )
               ),
+
+#Heavier Stats
         tabItem(tabName = 'heavystats', h2('Heavier Statistics'),
                 h5("While results from doing statistical testing (pairwise t-testing) on the specific categories are inconclusive,
                    the more-general categories lead to some better results."),
@@ -99,7 +103,8 @@ dashboardBody(
                 mainPanel(
                   fluidRow(column(12, tableOutput('ttest')))
                     )),
-        
+
+#Dead or Alive        
         tabItem(tabName = 'doa', h2('Dead or Alive?'),
                 h5("The majority of contestants portray characters who were alive at the time of their first appearance.\
                     Playing a dead person has a statistical advantage, though! By comparing the dead and alive average score with the\
@@ -115,7 +120,8 @@ dashboardBody(
                       ),
                 )
               ),
-        
+
+#About Me
         tabItem(tabName = 'me', h2("Joe Sferra"),
                 div(img(src='Joe Sferra Headshot.jpg', height="40%", width="40%"), style="text-align: left;"),
                 h5("I'm excited about taking my creative problem-solving and storytelling skills that I've developed\

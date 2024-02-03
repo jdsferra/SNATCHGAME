@@ -13,7 +13,7 @@ genrecheck2 <- reactive({
     filter(genres %in% c(input$general1, input$general2))
 })
 
-#specific work
+#Compare Specific
 output$bar1 <- renderPlot(
   genrecheck1() %>% group_by(genres) %>% mutate(genre_count = n(), avgscore = round(mean(score), 3)) %>%
     ungroup() %>% mutate(genre_update = paste0(genres, "; n=", genre_count, "; Mean Score: ", avgscore)) %>%
@@ -31,7 +31,7 @@ output$freq1 <- renderPlot(
   
 output$table1 <- renderTable(genrecheck1() %>% group_by(genres) %>% select(-1))
 
-#general work
+#Compare General
 output$bar2 <- renderPlot(
   genrecheck2() %>% group_by(genres) %>% mutate(genre_count = n(), avgscore = round(mean(score), 3)) %>%
     ungroup() %>% mutate(genre_update = paste0(genres, "; n=", genre_count, "; Mean Score: ", avgscore)) %>%
@@ -49,14 +49,14 @@ output$freq2 <- renderPlot(
 
 output$table2 <- renderTable(genrecheck2() %>% group_by(genres) %>% select(-1))
 
-#heavier stats
+#Heavier Stats
 pwjoin <- bigjoin2 %>% distinct(uniqueid, season, internat, queen, character, tsb, score, genres)
 pw <- pairwise.t.test(pwjoin$score, pwjoin$genres, p.adj= 'none')
 pwtt <- data.table(pw[['p.value']], keep.rownames = T) %>% rename(X = rn) %>% mutate_if(is.numeric, ~round(., 4))
 pwtt[is.na(pwtt)] <- ""
 output$ttest <- renderTable(pwtt)
 
-#DEAD OR ALIVE
+#Dead or Alive
 deadalivecheck <- bigjoin2 %>% distinct(uniqueid, character, tsb, score, alive)
 
 output$doabar <- renderPlot(deadalivecheck %>% group_by(alive) %>% mutate(avgscore = round(mean(score), 3)) %>%
@@ -78,7 +78,6 @@ mydoa <- t.test(alldead$score, allalive$score)
 output$thisval <- renderText(round(mydoa[['p.value']], 4))
 
 #About Me
-
 linkedin = a("LinkedIn", href="https://linkedin.com/in/joe-sferra/")
 github = a("GitHub", href="https://github.com/jdsferra")
 blog = a("NYCDSA Blog", href="https://nycdatascience.com/blog/author/jdsferra/")
@@ -94,9 +93,4 @@ output$tab2 <- renderUI({
 output$tab3 <- renderUI({
   tagList(blog)
 })
-
-
-
-
-#don't touch brackets below the line    
 })

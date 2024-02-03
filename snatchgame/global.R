@@ -1,3 +1,4 @@
+#import libraries
 library(shiny)
 library(shinydashboard)
 library(tidyverse)
@@ -5,7 +6,7 @@ library(scales)
 library(data.table)
 library(bslib)
 
-
+#import csv's and reformat
 bigjoin1 <- read.csv(file = "./bigjoin1.csv")
 bigjoin2 <- read.csv(file = "./bigjoin2.csv")
 
